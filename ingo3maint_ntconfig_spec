@@ -1,0 +1,28 @@
+# NT config spec for the Ingo3 maintenance project at Teleca Networks ver 05-01-21
+# author: Gunnar Andersson 
+
+# CNZ label used when labling CAA och CXC (fill in CNZ label)
+# element * CNZ220xxxx_Rx_CNIxxx
+
+element * CHECKEDOUT
+
+# Bug branch for specific problem (fill in TR number)
+# element * .../osd_hexxxxx/LATEST
+# mkbranch osd_hexxxxx -override
+
+# Fill in date if someone is still working on previous version
+# time 10-Jul.19:00
+
+# The CPF directories / files
+element /sio_fms/... .../osd_bugfix_ingo3/LATEST
+element /sio_fms/... BUGFIX_INGO3_P1A -mkbranch osd_bugfix_ingo3
+element /sio_fms/... /main/LATEST -mkbranch osd_bugfix_ingo3
+
+# The GOH directories / files
+element /ntaes/... .../osd_bugfix_ingo3/LATEST
+element /ntaes/... BUGFIX_INGO3_P1A -mkbranch osd_bugfix_ingo3
+element /ntaes/... /main/LATEST -mkbranch osd_bugfix_ingo3
+
+# other files / directories for viewing only:
+element * /main/LATEST -nocheckout
+

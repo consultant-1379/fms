@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+	Copyright (c) 2020 Ericsson AB.
+	All rights reserved
+
+	DX ECIM Tool-chain generated this file on Dec 24, 2020 2:30:28 PM using:
+	* com.ericsson.ecim.coremw.m2m 3.13.0.202006261811
+	* com.ericsson.ecim.coremw.dsl 3.13.0.202006261811
+	* com.ericsson.ecim.coremw.imm 3.13.0.202006261811
+--><imm:IMM-contents xmlns:imm="http://www.saforum.org/IMMSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saforum.org/IMMSchema SAI-AIS-IMM-XSD-A.01.01.xsd">
+    <object class="AxeCpFileSystemCpFileSystemM">
+        <dn>AxeCpFileSystemcpFileSystemMId=1</dn>
+        <attr>
+            <name>blockTransferTimeSlice</name>
+            <value>10000</value>
+        </attr>
+    </object>
+</imm:IMM-contents>

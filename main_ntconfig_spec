@@ -1,0 +1,13 @@
+# NT config spec for the main branch at AU-System ver 04-10-04
+# author: Gunnar Andersson 
+
+element * CHECKEDOUT
+
+# The lastest released directories / files
+element /ntaes/... /main/LATEST
+element /sio_fms/... /main/LATEST
+element /sio_mcs/... /main/LATEST
+
+# other files / directories for viewing only:
+element * /main/LATEST -nocheckout
+

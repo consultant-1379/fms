@@ -1,0 +1,108 @@
+# NT config spec for MCS maintenance based on ANZ21840/3 R1A (Ingo3). ver 01-12-05
+# author: Stefan Ericsson 
+# 011205 STER Added /main/aln_ingo2/aln_ingo3/LATEST
+# 020130 STER Changed to ... for all branches.
+# Note that INGO3-based correction is done in branch maint.
+#========================================================================
+
+# Correction base
+element * CHECKEDOUT
+element /sio_mcs/... .../maint/LATEST
+
+# Spec. for Released corrections
+#### This section must be updated for each released correction ####
+# Note that "-mkbranch" is removed once the branch has been created!!
+# All correction based on Ingo3 should thus be derived from the maint-branch.
+
+# Below follows the design base for MCS ANZ21840/3 R1A
+#======================================================
+
+# ADH base
+element /sio_mcs/adh/... ADHADMBIN_CXC137471_4_R1A -mkbranch maint
+
+element /sio_mcs/adh/... MMLAPIBIN_CXC137418_4_R3B
+element /sio_mcs/adh/... MMLAPIBIN_CXC137418_4_R3B -mkbranch maint
+element /sio_mcs/adh/... MMLAPIBIN_CXC137418_4_R3A -mkbranch maint
+
+element /sio_mcs/adh/... MMLAPILIB_CXA1100911_R1A -mkbranch maint
+
+element /sio_mcs/adh/... CPDCMDBIN_CXC137472_4_R1A -mkbranch maint
+
+element /sio_mcs/adh/... CUACMDBIN_CXC137473_4_R1A -mkbranch maint
+
+element /sio_mcs/adh/... CNZ2181103_R1 -mkbranch maint
+
+# AIAP base
+element /sio_mcs/aiap/... AIAPBIN_CXC1371001_4_R1A -mkbranch maint
+element /sio_mcs/aiap/... CNZ2181106_R1 -mkbranch maint
+
+# ALDA base
+element /sio_mcs/alda/... ALDABIN_CXC1371002_4_R1A -mkbranch maint
+element /sio_mcs/alda/... CNZ2181107_R1 -mkbranch maint
+
+# ALEC base
+element /sio_mcs/alec/... ALECADMBIN_CXC137479_4_R1A -mkbranch maint
+element /sio_mcs/alec/... CNZ2181105_R1 -mkbranch maint
+
+# MCC base
+element /sio_mcs/mcc/... MCCBIN_CXC137429_4_R3A -mkbranch maint
+element /sio_mcs/mcc/... CNZ2181088_R3 -mkbranch maint
+
+# MLS base
+element /sio_mcs/mls/... MLSMMLBIN_CXC137430_4_R3B -mkbranch maint
+element /sio_mcs/mls/... MLSMTSBIN_CXC137474_4_R1B -mkbranch maint
+element /sio_mcs/mls/... CNZ2181104_R1 -mkbranch maint
+
+# PDS base
+element /sio_mcs/pds/... PDSPGMBIN_CXC137431_4_R2A -mkbranch maint
+element /sio_mcs/pds/... CNZ2181090_R2 -mkbranch maint
+
+# ALIS base
+element /sio_mcs/alis/... AISAPIBIN_CXC137425_4_R2A -mkbranch maint
+element /sio_mcs/alis/... ALISADMBIN_CXC1371004_4_R1A -mkbranch maint
+element /sio_mcs/alis/... CNZ2181108_R1 -mkbranch maint
+
+# Documents
+element /sio_mcs/_instructions/... /main/LATEST
+
+
+# MCS Subsystem base ANZ 21840/3 R1A  INGO3 Release
+element /sio_mcs/... ANZ21840_3_R1A -nocheckout
+
+#############################################
+# Define the access to other VOBs (View-only)
+#############################################
+
+# VOB Interfaces
+element /Interfaces/... .../aln_ingo3/LATEST -nocheckout
+element /Interfaces/... .../Ingo3/LATEST -nocheckout
+element /Interfaces/... .../aln_ingo2/LATEST -nocheckout
+element /Interfaces/... .../Ingo/LATEST -nocheckout
+# element /Interfaces/... .../sio_NT/LATEST -nocheckout
+# element /Interfaces/... .../sio/LATEST -nocheckout
+
+# VOB ACS
+element /ntacs/... .../aln_ingo3/LATEST -nocheckout
+element /ntacs/... .../Ingo3/LATEST -nocheckout
+element /ntacs/... .../Ingo2/LATEST -nocheckout
+element /ntacs/... .../Ingo/LATEST -nocheckout
+# element /ntacs/... .../sio_NT/LATEST -nocheckout
+# element /ntacs/... .../sio/LATEST -nocheckout
+
+# VOB AES
+element /ntaes/... .../aln_ingo3/LATEST -nocheckout
+element /ntaes/... .../Ingo3/LATEST -nocheckout
+element /ntaes/... .../Ingo/LATEST -nocheckout
+# element /ntaes/... .../sio_NT/LATEST -nocheckout
+# element /ntaes/... .../sio/LATEST -nocheckout
+
+# VOB FMS
+element /sio_fms/... .../aln_ingo3/LATEST -nocheckout
+element /sio_fms/... .../Ingo3/LATEST -nocheckout
+element /sio_fms/... .../Ingo/LATEST -nocheckout
+# element /sio_fms/... .../sio_NT/LATEST -nocheckout
+# element /sio_fms/... .../sio/LATEST -nocheckout
+
+# other files / directories for viewing only:
+element * /main/LATEST -nocheckout
+

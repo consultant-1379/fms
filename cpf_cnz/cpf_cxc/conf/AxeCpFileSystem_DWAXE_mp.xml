@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
+	Copyright (c) 2020 Ericsson AB.
+	All rights reserved
+
+	DX ECIM Tool-chain generated this file on Dec 24, 2020 2:30:32 PM using:
+	* com.ericsson.ecim.m2m 3.13.0.202006261811
+	* com.ericsson.ecim.dsl 3.13.0.202006261811
+	* com.ericsson.ecim.edm 3.13.0.202006261811
+--><!DOCTYPE models SYSTEM "mp.dtd">
+<models>
+    <dtdVersion>K</dtdVersion>
+    <momMetaData>
+        <momTitle>Managed Object Model for CP File System Management Function</momTitle>
+        <momSubTitle/>
+        <momIdentity>
+            <docNum>19089-CXA 117 0019/8</docNum>
+            <docLang>Uen</docLang>
+            <docRev>E</docRev>
+            <docDate>2020-12-24</docDate>
+        </momIdentity>
+        <createdBy>
+            <signature>ZGIRAKH</signature>
+        </createdBy>
+    </momMetaData>
+    <mim author="Akhila Giramoni" contact="ZGIRAKH" correction="1" date="2020-12-24" docNo="" name="AxeCpFileSystem" namespace="urn:com:ericsson:ecim:AxeCpFileSystem" namespacePrefix="axecpfilesystem" organization="" release="4" revision="E" version="3">
+        <description>CP File System Management function MOM.</description>
+        <domainExtension domain="ECIM">
+            <extension name="immNamespace" value="MOM_NAME"/>
+        </domainExtension>
+        <enum name="CopyMode">
+            <description>Specifies how files are copied.</description>
+            <enumMember name="OVERWRITE">
+                <value>0</value>
+            </enumMember>
+            <enumMember name="APPEND">
+                <value>1</value>
+            </enumMember>
+            <enumMember name="CLEAR">
+                <value>2</value>
+            </enumMember>
+            <enumMember name="NORMAL">
+                <value>3</value>
+            </enumMember>
+        </enum>
+        
+        <derivedDataType name="DeleteFileTimer">
+            <description>Specifies the delay in minutes for deletion of subfile.</description>
+            <baseType>
+                <int32>
+                    <range>
+                        <min>-1</min>
+                        <max>20160</max>
+                    </range>
+                    <ranges>
+                        <subrange>
+                            <min>-1</min>
+                            <max>20160</max>
+                        </subrange>
+                    </ranges>
+                </int32>
+            </baseType>
+        </derivedDataType>
+        <class name="CpFileSystemM">
+            <description>Represents the root MOC for AXE CP File System Management function MOM.
+The function provides file management and file processing services for CP applications requiring APG support. 
+It implements the CP file system which is based on AP file system, supporting the different file classes and file types used in the CP.
+
+Two different CP file classes, which indicate the structure of the file, are supported:
+1) Simple: A CP simple file only contains data, and is not a part of a composite file. 
+2) Composite: A CP composite file is made up of a main file and any number of subfiles.
+    The main file is a template for the creation of the subfiles. The subfiles contain the data records.
+
+Two different file types, which indicate how the records in a file are accessed, are supported:
+1) Regular: A regular file contains records that may be written or read sequentially or by addressing specific record numbers.
+2) Infinite: An infinite file is a composite file where the subfiles are automatically created by the system.
+   An infinite file may be read or written sequentially. When writing to an infinite file, data is written sequentially to the most recently created subfile, called active subfile. 
+
+Infinite subfiles in the CP file system may be transfered automatically to a remote side, if the infinite main file has been defined to a data transfer policy.
+
+CP handles file and volume names as case insensitive strings, so two file or volume names can not differ in meaning based on differing use of uppercase and lowercase letters.
+It is advisable, to avoid misunderstandings, define file and volume names always in uppercase.
+
+A CP File is unique in the CP File System. It means that it is not possible to create, in the same or different CP Volumes, two or more CP Files with the same name. </description>
+            <root/>
+            <action name="importCpFile">
+                <description>Imports a file or a directory stored on APG file system to an existing CP file.
+It is applicable on a Single-CP System configuration.
+A compressed file can be imported as well. 
+A compressed file or a directory can be imported only in an existing composite CP file.
+Importing is done taking data from the predefined folder "cp/files". 
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- File exists: &lt;CP file name&gt;: The CP file already exists in the CP file system.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Invalid file reference: Attempt to import an AP file or directory containing incorrect file names to a CP composite file.
+- Invalid path: The path to import from is invalid.
+- Not allowed in this system configuration: The action is not allowed in Multi-CP System.
+- Operation not permitted for this file type: The requested operation is not allowed for CP infinite file.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the AP file system. 
+</description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="1"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="source">
+                    <description>Specifies the name of a file system item, file or folder, to import in a CP file.
+The string should be expressed as: [&lt;FolderPathName&gt;/]&lt;ItemName&gt;.
+"FolderPathName" is optional since it represents the relative path respect to predefined folder "cp/files".
+"ItemName" is the name of a file or a folder.
+For example if the file "cp/files/CpDump/AXEdump" should be imported in a CP file, the parameter "source" should be "CpDump/AXEdump".</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="destCpFile">
+                    <description>Specifies the name of CP file which to act the import into.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="mode">
+                    <description>Specifies the import mode.
+
+It can be one of the following values:
+	  
+	  OVERWRITE: 
+	   An existing CP file is overwritten.
+
+	  APPEND:
+	   Data is added to the end of an existing CP file.
+
+	  NORMAL: 
+	   Import fails in case the name of the file system item being imported is the same of an already existing destination CP file. 
+
+          CLEAR:
+	   An existing CP file is overwritten. 
+	   If the destination is a composite CP file, all subfiles belonging to it are deleted before starting import.</description>
+                    <in/>
+                    <dataType>
+                        <enumRef name="CopyMode">
+                            <defaultValue>NORMAL</defaultValue>
+                            <mimName>AxeCpFileSystem</mimName>
+                        </enumRef>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="exportCpFile">
+                <description>Exports a CP file to the APG file system in a Single-CP System configuration.
+Exporting a CP composite file means exporting a folder, representing it, and all included files.
+Exporting a CP simple file or a CP subfile means exporting a single file.
+
+Exporting is done towards the predefined folder "cp/files". 
+
+Exported data can be compressed, into zip format, if specified via parameter "toZip".
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- File is protected. File is connected to a transfer queue: The CP file is connected to a transfer queue and can not be exported.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Invalid path: The path to export is invalid.
+- Not allowed in this system configuration: The action is not allowed in Multi-CP System.
+- Parameter error: mode CLEAR not allowed: Export with mode clear is not supported.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the APG file system. </description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="2"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="sourceCpFile">
+                    <description>Specifies the name of CP File to export.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="dest">
+                    <description>Specifies the name of a file system item, file or folder, where to export a CP file.
+The string should be expressed as: [&lt;FolderPathName&gt;/]&lt;ItemName&gt;.
+"FolderPathName" is optional since it represents the relative path respect to predefined folder "cp/files".
+"ItemName" is the name of a file or a folder.
+For example if a CP file export to file "cp/files/CpDump/AXEdump" is needed, the parameter "dest" should be "CpDump/AXEdump".</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="mode">
+                    <description>Specifies the export mode.
+
+It can be one of the following values:
+	  
+	  OVERWRITE: 
+	   An existing file system item is overwritten.
+
+	  APPEND:
+	   Data is added to the end of an existing file system item.
+
+	  NORMAL : 
+	   Export fails in case the destination path contains a file having the same name as the CP simple file or the CP subfile being exported. 
+
+Note: mode CLEAR is not supported.</description>
+                    <in/>
+                    <dataType>
+                        <enumRef name="CopyMode">
+                            <defaultValue>NORMAL</defaultValue>
+                            <mimName>AxeCpFileSystem</mimName>
+                        </enumRef>
+                    </dataType>
+                </parameter>
+                <parameter name="toZip">
+                    <description>Enables or disables creation of a zip archive. 
+The created zip archive is named as specified by the parameter "dest" and its extension is '.zip'.</description>
+                    <isNillable/>
+                    <in/>
+                    <dataType>
+                        <boolean>
+                            <defaultValue>false</defaultValue>
+                        </boolean>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="copyCpFile">
+                <description>Copies a CP file to another CP file. The destination file must already exist. 
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- File exists: &lt;CP file name&gt;: The CP file already exists in the CP file system.
+- File is protected. File is connected to a transfer queue: The CP file is connected to a transfer queue, and can not be copied from or copied to.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Not a composite file: &lt;CP file name&gt;: The requested operation is only allowed for a CP composite file.
+- Not a simple file or subfile: &lt;CP file name&gt;: The requested operation is only allowed for a CP simple file or subfile.
+- Not allowed in this system configuration: The action is not allowed in Multi-CP System.
+- Operation not permitted for this file type: The requested operation is not allowed for CP infinite file.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the AP file system. 
+</description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="3"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="sourceCpFile">
+                    <description>Source CP file.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="destCpFile">
+                    <description>Specifies the destination CP File.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="mode">
+                    <description>Specifies the copy mode.
+
+It can be one of the following values:
+         
+   OVERWRITE: 
+    An existing CP file is overwritten when the CP file is copied.
+     
+   APPEND: 
+    Data is added to the end of an existing CP file when the CP file is copied.
+         
+   CLEAR: 
+    An existing CP file is overwritten when a CP file is copied. If the destination CP file is a composite CP file,
+    all subfiles belonging to this CP file are deleted before the source CP file is copied.
+
+   NORMAL : 
+    Copy fails in case the destination composite CP file has some CP subfiles with the same name of the CP subfiles being copied.</description>
+                    <in/>
+                    <dataType>
+                        <enumRef name="CopyMode">
+                            <defaultValue>NORMAL</defaultValue>
+                            <mimName>AxeCpFileSystem</mimName>
+                        </enumRef>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="moveCpFile">
+                <description>Moves a CP file to another CP volume in a Single-CP System configuration. 
+If a composite CP file is moved all the subfiles of that file are also moved. 
+The volume to which the file is moved must already exist.
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- Cannot move file to same volume: A CP file cannot be moved to the same volume where it is already stored.
+- File is protected. File is connected to a transfer queue: The CP file is connected to a transfer queue and can not be moved.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Not allowed in this system configuration: The action is not allowed in Multi-CP System.
+- Operation not permitted for this file type: The requested operation is not allowed for CP infinite file.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the AP file system.
+- Volume was not found: &lt;volume name&gt;: The destination volume does not exist. 
+</description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="4"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="sourceCpFile">
+                    <description>CP file to move.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="volume">
+                    <description>Destination volume.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="renameCpFile">
+                <description>Renames a CP file or a CP subfile in a Single-CP System configuration. 
+A CP file and a related CP subfile cannot be renamed at the same time.
+A CP infinite file cannot be renamed if it is associated to a transfer queue.
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- File exists: &lt;CP file name&gt;: The CP file already exists in the CP file system.
+- File is protected. File is connected to a transfer queue: The CP file is connected to a transfer queue and cannot be renamed.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Not a composite file: &lt;CP file name&gt;: The requested operation is only allowed for a CP composite file.
+- Not a simple file or a composite file: &lt;CP file name&gt;: A CP file cannot be renamed as a subfile.
+- Not a subfile: &lt;CP file name&gt;: A subfile cannot be renamed as a CP composite file.
+- Not allowed in this system configuration: The action is not allowed in Multi-CP System.
+- Operation not permitted for this file type: The requested operation is not allowed for a subfile of a CP infinite file.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the AP file system.
+- Subfile must belong to the same composite file: &lt;CP file name&gt;: The current and new subfiles do not belong to the same CP composite file. 
+</description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="5"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="currentName">
+                    <description>Specifies the current CP file or subfile name.
+It is expressed as &lt;CpFileName&gt; in case of renaming of a CP file, or
+&lt;CpFileName&gt;-&lt;CpSubfileName&gt; in case of renaming of a CP subfile.
+</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="newName">
+                    <description>Specifies the new CP file or subfile name.
+It is expressed as &lt;CpFileName&gt; in case of renaming of a CP file, or
+&lt;CpFileName&gt;-&lt;CpSubfileName&gt; in case of renaming of a CP subfile.
+</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="copyCpClusterFile">
+                <description>Copies a CP file to another CP file. The destination file must already exist. 
+The copy mode can be: 
+
+   Overwrite : 
+    An existing CP file is overwritten when the CP file is copied.
+
+   Append : 
+    Data is added to the end of an existing CP file when the CP file is copied.
+
+   Clear : 
+    An existing CP file is overwritten when a CP file is copied. If the destination CP file is a composite CP file,
+    all subfiles belonging to this CP file are deleted before the source CP file is copied.
+
+Copies a CP file to another CP file. The destination file must already exist. 
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- File exists: &lt;CP file name&gt;: The CP file already exists in the CP file system.
+- File is protected. File is connected to a transfer queue: The CP file is connected to a transfer queue, and can not be copied from or copied to.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Not a composite file: &lt;CP file name&gt;: The requested operation is only allowed for a CP composite file.
+- Not a simple file or subfile: &lt;CP file name&gt;: The requested operation is only allowed for a CP simple file or subfile.
+- Not allowed in this system configuration: The action is not allowed in Single-CP System.
+- Operation not permitted for this file type: The requested operation is not allowed for CP infinite file.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the APG file system. </description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="8"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="sourceCpFile">
+                    <description>Source CP file.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="destCpFile">
+                    <description>Specifies the destination CP File.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="mode">
+                    <description>Specifies the copy mode.
+
+It can be one of the following values:
+         
+   OVERWRITE: 
+    An existing CP file is overwritten when the CP file is copied.
+     
+   APPEND: 
+    Data is added to the end of an existing CP file when the CP file is copied.
+         
+   CLEAR: 
+    An existing CP file is overwritten when a CP file is copied. If the destination CP file is a composite CP file,
+    all subfiles belonging to this CP file are deleted before the source CP file is copied.
+
+   NORMAL : 
+    Copy fails in case the destination composite CP file has some CP subfiles with the same name of the CP subfiles being copied.</description>
+                    <in/>
+                    <dataType>
+                        <enumRef name="CopyMode">
+                            <defaultValue>NORMAL</defaultValue>
+                            <mimName>AxeCpFileSystem</mimName>
+                        </enumRef>
+                    </dataType>
+                </parameter>
+                <parameter name="cpName">
+                    <description>The default Central Processor (CP) name or literal "CLUSTER".
+A valid CP name is an alphanumeric string with a maximum length of seven characters.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="exportCpClusterFile">
+                <description>Exports a CP file to the APG file system in a Multi-CP System configuration.
+Exporting a CP composite file means exporting a folder, representing it, and all included files.
+Exporting a CP simple file or a CP subfile means exporting a single file.
+
+Exporting is done towards the predefined folder "cp/files". 
+
+Exported data can be compressed, into zip format, if specified via parameter "toZip".
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- File is protected. File is connected to a transfer queue: The CP file is connected to a transfer queue and can not be exported.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Invalid path: The path to export is invalid.
+- Not allowed in this system configuration: The action is not allowed in Single-CP System.
+- Parameter error: mode CLEAR not allowed: Export with mode clear is not supported.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the APG file system. </description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="7"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="sourceCpFile">
+                    <description>Specifies the name of CP File to export.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="dest">
+                    <description>Specifies the name of a file system item, file or folder, where to export a CP file.
+The string should be expressed as: [&lt;FolderPathName&gt;/]&lt;ItemName&gt;.
+"FolderPathName" is optional since it represents the relative path respect to predefined folder "cp/files".
+"ItemName" is the name of a file or a folder.
+For example if a CP file export to file "cp/files/CpDump/AXEdump" is needed, the parameter "dest" should be "CpDump/AXEdump".</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="mode">
+                    <description>Specifies the export mode.
+
+It can be one of the following values:
+	  
+	  OVERWRITE: 
+	   An existing file system item is overwritten.
+
+	  APPEND:
+	   Data is added to the end of an existing file system item.
+
+	  NORMAL : 
+	   Export fails in case the destination path contains a file having the same name as the CP simple file or the CP subfile being exported. 
+
+Note: mode CLEAR is not supported.</description>
+                    <in/>
+                    <dataType>
+                        <enumRef name="CopyMode">
+                            <defaultValue>NORMAL</defaultValue>
+                            <mimName>AxeCpFileSystem</mimName>
+                        </enumRef>
+                    </dataType>
+                </parameter>
+                <parameter name="toZip">
+                    <description>Enables or disables creation of a zip archive. 
+The created zip archive is named as specified by the parameter "dest" and its extension is '.zip'.</description>
+                    <isNillable/>
+                    <in/>
+                    <dataType>
+                        <boolean>
+                            <defaultValue>false</defaultValue>
+                        </boolean>
+                    </dataType>
+                </parameter>
+                <parameter name="cpName">
+                    <description>The default Central Processor (CP) name or literal "CLUSTER".
+A valid CP name is an alphanumeric string with a maximum length of seven characters.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="importCpClusterFile">
+                <description>Imports a file or a directory stored on APG file system to an existing CP file.
+It is applicable on a Multi-CP System configuration.
+A compressed file can be imported as well. 
+A compressed file or a directory can be imported only in an existing composite CP file.
+Importing is done taking data from the predefined folder "cp/files". 
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- File exists: &lt;CP file name&gt;: The CP file already exists in the CP file system.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Invalid file reference: Attempt to import an AP file or directory containing incorrect file names to a CP composite file.
+- Invalid path: The path to import from is invalid.
+- Not allowed in this system configuration: The action is not allowed in Single-CP System.
+- Operation not permitted for this file type: The requested operation is not allowed for CP infinite file.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the AP file system. 
+</description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="6"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="source">
+                    <description>Specifies the name of a file system item, file or folder, to import in a CP file.
+The string should be expressed as: [&lt;FolderPathName&gt;/]&lt;ItemName&gt;.
+"FolderPathName" is optional since it represents the relative path respect to predefined folder "cp/files".
+"ItemName" is the name of a file or a folder.
+For example if the file "cp/files/CpDump/AXEdump" should be imported in a CP file, the parameter "source" should be "CpDump/AXEdump".</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="destCpFile">
+                    <description>Specifies the name of CP file which to act the import into.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="mode">
+                    <description>Specifies the import mode.
+
+It can be one of the following values:
+	  
+	  OVERWRITE: 
+	   An existing CP file is overwritten.
+
+	  APPEND:
+	   Data is added to the end of an existing CP file.
+
+	  NORMAL: 
+	   Import fails in case the name of the file system item being imported is the same of an already existing destination CP file. 
+
+          CLEAR:
+	   An existing CP file is overwritten. 
+	   If the destination is a composite CP file, all subfiles belonging to it are deleted before starting import.</description>
+                    <in/>
+                    <dataType>
+                        <enumRef name="CopyMode">
+                            <defaultValue>NORMAL</defaultValue>
+                            <mimName>AxeCpFileSystem</mimName>
+                        </enumRef>
+                    </dataType>
+                </parameter>
+                <parameter name="cpName">
+                    <description>The default Central Processor (CP) name or literal "CLUSTER".
+A valid CP name is an alphanumeric string with a maximum length of seven characters.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="moveCpClusterFile">
+                <description>Moves a CP file to another CP volume in a Multi-CP System configuration. 
+If a composite CP file is moved all the subfiles of that file are also moved. 
+The volume to which the file is moved must already exist.
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- Cannot move file to same volume: A CP file cannot be moved to the same volume where it is already stored.
+- File is protected. File is connected to a transfer queue: The CP file is connected to a transfer queue and can not be moved.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Not allowed in this system configuration: The action is not allowed in Single-CP System.
+- Operation not permitted for this file type: The requested operation is not allowed for CP infinite file.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the AP file system.
+- Volume was not found: &lt;volume name&gt;: The destination volume does not exist. 
+</description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="9"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="sourceCpFile">
+                    <description>CP file to move.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="volume">
+                    <description>Destination volume.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="cpName">
+                    <description>The default Central Processor (CP) name or literal "CLUSTER".
+A valid CP name is an alphanumeric string with a maximum length of seven characters.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+            </action>
+            <action name="renameCpClusterFile">
+                <description>Renames a CP file in a Multi-CP System configuration. 
+A CP file and a related CP subfile cannot be renamed at the same time.
+A CP infinite file cannot be renamed if it is associated to a transfer queue.
+
+The action can fail due to one of the following reasons:
+- Access error: The requested operation conflicts with other user of the file.
+- Action not executed, AP backup in progress: A backup operation is ongoing.
+- File exists: &lt;CP file name&gt;: The CP file already exists in the CP file system.
+- File is protected. File is connected to a transfer queue: The CP file is connected to a transfer queue and cannot be renamed.
+- File was not found: &lt;CP file name&gt;: The CP file was not found in the CP file system.
+- General Fault: Error when executing.
+- Invalid file name: The CP file name is not correct.
+- Not a composite file: &lt;CP file name&gt;: The requested operation is only allowed for a CP composite file.
+- Not a simple file or a composite file: &lt;CP file name&gt;: A CP file cannot be renamed as a subfile.
+- Not a subfile: &lt;CP file name&gt;: A subfile cannot be renamed as a CP composite file.
+- Not allowed in this system configuration: The action is not allowed in Single-CP System.
+- Operation not permitted for this file type: The requested operation is not allowed for a subfile of a CP infinite file.
+- Physical file error: &lt;detailed information&gt;: An error has occured in the AP file system.
+- Subfile must belong to the same composite file: &lt;CP file name&gt;: The current and new subfiles do not belong to the same CP composite file. 
+</description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="10"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+                <parameter name="currentName">
+                    <description>Specifies the current CP file or subfile name.
+It is expressed as &lt;CpFileName&gt; in case of renaming of a CP file, or
+&lt;CpFileName&gt;-&lt;CpSubfileName&gt; in case of renaming of a CP subfile.
+</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="newName">
+                    <description>Specifies the new CP file or subfile name.
+It is expressed as &lt;CpFileName&gt; in case of renaming of a CP file, or
+&lt;CpFileName&gt;-&lt;CpSubfileName&gt; in case of renaming of a CP subfile.
+</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+                <parameter name="cpName">
+                    <description>The default Central Processor (CP) name or literal "CLUSTER".
+A valid CP name is an alphanumeric string with a maximum length of seven characters.</description>
+                    <in/>
+                    <dataType>
+                        <string/>
+                    </dataType>
+                </parameter>
+            </action>
+            <attribute name="cpFileSystemMId">
+                <description>Holds the name used when identifying the MO.</description>
+                <mandatory/>
+                <noNotification/>
+                <restricted/>
+                <key/>
+                <dataType>
+                    <string/>
+                </dataType>
+            </attribute>
+            
+        </class>
+        <class name="CpVolume">
+            <description>Instance of this class represents a volume in the CP file system.
+A CP volume can contain several CP files and subfiles. A CP file or subfile can only belong to one CP volume.</description>
+            <attribute name="cpVolumeId">
+                <description>Holds the name used when identifying the MO.
+It is the name of the volume and the CP to which it belongs.
+A valid value must comply the following rule:
+
+&lt;volumeName&gt;[:&lt;defaultCpName&gt;]
+
+where:
+
+&lt;volumeName&gt; is an alphanumeric string with a maximum length of fourteen characters, also the low hyphen symbol can be used.
+The string must begin with an alphabetic character; it is recommeded to use upper case characters.
+
+&lt;defaultCpName&gt; is an alphanumeric string with a maximum length of seven characters. It must be set to the default CP name or literal "CLUSTER". It is mandatory only on Multi-CP System.</description>
+                <mandatory/>
+                <noNotification/>
+                <restricted/>
+                <key/>
+                <dataType>
+                    <string/>
+                </dataType>
+            </attribute>
+        </class>
+        <class name="CompositeFile">
+            <description>Instance of this class represents a CP regular composite file. 
+It consists of a template for the creation of subfile and one or several subfiles.</description>
+            <attribute name="compositeFileId">
+                <description>Holds the name used when identifying the MO. It is the name of the composite CP file.
+A valid name is an alphanumeric string with a maximum length of twelve characters.
+The name must start with an alphabetic character.</description>
+                <mandatory/>
+                <noNotification/>
+                <restricted/>
+                <key/>
+                <dataType>
+                    <string/>
+                </dataType>
+            </attribute>
+            <attribute name="recordLength">
+                <description>The length, in byte, of the data records. 
+A record contains data elements that are treated as a single unit.</description>
+                <mandatory/>
+                <noNotification/>
+                <dataType>
+                    <uint16/>
+                </dataType>
+            </attribute>
+            <attribute name="exclusiveAccess">
+                <description>Indicates an exclusive read or write access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <boolean/>
+                </dataType>
+            </attribute>
+            <attribute name="numOfReaders">
+                <description>The number of current users with read access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="numOfWriters">
+                <description>The number of current users with write access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="deleteFileTimer">
+                <description>Specifies the delay in minutes for deletion of the subfile.
+
+When the deleteFileTimer expires, the file is deleted from the APG. If minus one (-1) is specified, no delete FileTimer is defined for the file. Consequently, minus one (-1) is not regarded as an actual deleteFileTimer value.
+It is instead used to disable the automatic deletion of the file.
+
+In Multi-CP System this attribute is not applicable.</description>
+                <noNotification/>
+                <dataType>
+                    <derivedDataTypeRef name="DeleteFileTimer">
+                        <defaultValue>-1</defaultValue>
+                        <mimName>AxeCpFileSystem</mimName>
+                    </derivedDataTypeRef>
+                </dataType>
+                <sideEffects>For lower disk size this attribute may fill up CP File System quota completely. Refer to User Guide File Management for more information.
+</sideEffects>
+            </attribute>
+        </class>
+        <class name="SimpleFile">
+            <description>Instance of this class represents a simple CP file. 
+It consists of a regular data in one data file.</description>
+            <attribute name="simpleFileId">
+                <description>Holds the name used when identifying the MO. It is the name of the simple CP file.
+A valid name is an alphanumeric string with a maximum length of twelve characters.
+The name must start with an alphabetic character.</description>
+                <mandatory/>
+                <noNotification/>
+                <restricted/>
+                <key/>
+                <dataType>
+                    <string/>
+                </dataType>
+            </attribute>
+            <attribute name="recordLength">
+                <description>The length, in byte, of the data records. 
+A record contains data elements that are treated as a single unit.</description>
+                <mandatory/>
+                <noNotification/>
+                <dataType>
+                    <uint16/>
+                </dataType>
+            </attribute>
+            <attribute name="size">
+                <description>Indicates the size of the CP file, expressed in records.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint32/>
+                </dataType>
+            </attribute>
+            <attribute name="numOfReaders">
+                <description>The number of current users with read access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="numOfWriters">
+                <description>The number of current users with write access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="exclusiveAccess">
+                <description>Indicates an exclusive read or write access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <boolean/>
+                </dataType>
+            </attribute>
+        </class>
+        <class name="InfiniteFile">
+            <description>Instance of this class represents a infinite composite CP file. 
+It is a composite file where the subfiles are created automatically by CP applications. 
+For this type of CP file is possible associate a transfer policy.</description>
+            <action name="releaseSubFile">
+                <description>Changes the active subfile. Closes the active and opens a new subfile. </description>
+                <domainExtension domain="CoreMW">
+                    <extension name="admOpId" value="1"/>
+                </domainExtension>
+                <returnType>
+                    <void/>
+                </returnType>
+            </action>
+            <attribute name="lastSubfileSent">
+                <description>Specifies the last subfile transferred.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint32/>
+                </dataType>
+            </attribute>
+            <attribute name="maxSize">
+                <description>Specifies the maximum number of records that can be written in an Infinite CP subfile.</description>
+                <noNotification/>
+                <dataType>
+                    <uint32>
+                        <defaultValue>0</defaultValue>
+                    </uint32>
+                </dataType>
+            </attribute>
+            <attribute name="maxTime">
+                <description>Specifies the maximum length of time between each change of active subfile of the infinite CP file.</description>
+                <noNotification/>
+                <dataType>
+                    <uint32>
+                        <defaultValue>0</defaultValue>
+                    </uint32>
+                </dataType>
+            </attribute>
+            <attribute name="recordLength">
+                <description>Specifies the length, in byte, of the data records. 
+A record contains data elements that are treated as a single unit.</description>
+                <mandatory/>
+                <noNotification/>
+                <dataType>
+                    <uint16/>
+                </dataType>
+            </attribute>
+            <attribute name="overrideSubfileClosure">
+                <description>Specifies the release condition for the Infinite CP File.
+If the release condition is enabled (true) and an Infinite subfile is closed, a new active subfile is created.
+If the release condition is not enabled (false) and the infinite file is closed and opened again, then the active subfile will remain the same.</description>
+                <noNotification/>
+                <dataType>
+                    <boolean>
+                        <defaultValue>false</defaultValue>
+                    </boolean>
+                </dataType>
+            </attribute>
+            <attribute name="activeSubFile">
+                <description>Specifies the number of the active subfile.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint32/>
+                </dataType>
+            </attribute>
+            <attribute name="infiniteFileId">
+                <description>Holds the name used when identifying the MO. It is the name of the infinite CP file.
+A valid name is an alphanumeric string with a maximum length of twelve characters.
+The name must start with an alphabetic character.</description>
+                <mandatory/>
+                <noNotification/>
+                <restricted/>
+                <key/>
+                <dataType>
+                    <string/>
+                </dataType>
+            </attribute>
+            <attribute name="exclusiveAccess">
+                <description>Specifies an exclusive read or write access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <boolean/>
+                </dataType>
+            </attribute>
+            <attribute name="numOfReaders">
+                <description>Specifies the number of current users with read access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="numOfWriters">
+                <description>Specifies the number of current users with write access on the CP file.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="transferQueue">
+                <description>Specifies the name of the file transfer queue.
+It will be used to transfer the infinite CP file to a remote destination.</description>
+                <noNotification/>
+                <isNillable/>
+                <dataType>
+                    <string/>
+                </dataType>
+            </attribute>
+            <attribute name="activeSubfileExclusiveAccess">
+                <description>Specifies an exclusive read or write access on the active infinite subfile.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <boolean/>
+                </dataType>
+            </attribute>
+            <attribute name="activeSubfileNumOfReaders">
+                <description>Specifies the number of current users with read access on the active infinte subfile.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="activeSubfileNumOfWriters">
+                <description>Specifies the number of current users with write access on the active infinite subfile.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="activeSubfileSize">
+                <description>Specifies the active infinite subfile size expressed in records.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint32/>
+                </dataType>
+            </attribute>
+            <attribute name="transferQueueDn">
+                <description>Specifies the DN for the MO representing the TQ used by Infinite File. </description>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <moRef name="ManagedObject">
+                        <mimName>EcimCommon</mimName>
+                    </moRef>
+                </dataType>
+            </attribute>
+        </class>
+        <class name="CompositeSubFile">
+            <description>Instance of this class represents a subfile of a regular composite CP file.</description>
+            <attribute name="compositeSubFileId">
+                <description>Holds the name used when identifying the MO. It is the name of the composite CP subfile. 
+It consists of two parts, separated by a dash.The first part is an alphanumeric string with a maximum length of twelve characters.
+The optional second part indicates the subfile generation, it can be an alphanumeric string with a maximum length of six characters.</description>
+                <mandatory/>
+                <noNotification/>
+                <restricted/>
+                <key/>
+                <dataType>
+                    <string/>
+                </dataType>
+            </attribute>
+            <attribute name="size">
+                <description>Indicates the size of the subfile, expressed in records.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint32/>
+                </dataType>
+            </attribute>
+            <attribute name="numOfReaders">
+                <description>The number of current users with read access on the CP subfile.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="numOfWriters">
+                <description>The number of current users with write access on the CP subfile.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <uint8/>
+                </dataType>
+            </attribute>
+            <attribute name="exclusiveAccess">
+                <description>Indicates an exclusive read or write access on the CP subfile.</description>
+                <noNotification/>
+                <readOnly/>
+                <isNillable/>
+                <dataType>
+                    <boolean/>
+                </dataType>
+            </attribute>
+        </class>
+        
+        <relationship name="cpFileSystem_to_cpVolume">
+            <containment>
+                <parent>
+                    <hasClass name="CpFileSystemM">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                </parent>
+                <child>
+                    <hasClass name="CpVolume">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                    <cardinality>
+                        <min>0</min>
+                    </cardinality>
+                </child>
+                <domainExtension domain="ECIM">
+                    <extension name="canCreate" value="true"/>
+                    <extension name="canDelete" value="true"/>
+                </domainExtension>
+            </containment>
+        </relationship>
+        <relationship name="cpVolume_to_fileSimple">
+            <containment>
+                <parent>
+                    <hasClass name="CpVolume">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                </parent>
+                <child>
+                    <hasClass name="SimpleFile">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                    <cardinality>
+                        <min>0</min>
+                    </cardinality>
+                </child>
+                <domainExtension domain="ECIM">
+                    <extension name="canCreate" value="true"/>
+                    <extension name="canDelete" value="true"/>
+                </domainExtension>
+            </containment>
+        </relationship>
+        <relationship name="cpVolume_to_fileInfinite">
+            <containment>
+                <parent>
+                    <hasClass name="CpVolume">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                </parent>
+                <child>
+                    <hasClass name="InfiniteFile">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                    <cardinality>
+                        <min>0</min>
+                    </cardinality>
+                </child>
+                <domainExtension domain="ECIM">
+                    <extension name="canCreate" value="true"/>
+                    <extension name="canDelete" value="true"/>
+                </domainExtension>
+            </containment>
+        </relationship>
+        <relationship name="cpVolume_to_fileComposite">
+            <containment>
+                <parent>
+                    <hasClass name="CpVolume">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                </parent>
+                <child>
+                    <hasClass name="CompositeFile">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                    <cardinality>
+                        <min>0</min>
+                    </cardinality>
+                </child>
+                <domainExtension domain="ECIM">
+                    <extension name="canCreate" value="true"/>
+                    <extension name="canDelete" value="true"/>
+                </domainExtension>
+            </containment>
+        </relationship>
+        <relationship name="compositeFile_to_subfile">
+            <containment>
+                <parent>
+                    <hasClass name="CompositeFile">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                </parent>
+                <child>
+                    <hasClass name="CompositeSubFile">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                    <cardinality>
+                        <min>0</min>
+                    </cardinality>
+                </child>
+                <domainExtension domain="ECIM">
+                    <extension name="canCreate" value="true"/>
+                    <extension name="canDelete" value="true"/>
+                </domainExtension>
+            </containment>
+        </relationship>
+        
+    </mim>
+    <mim name="EcimCommon" release="0" version="1">
+        <class name="ManagedObject">
+            <description>The ManagedObject MO represents a generic MO type. It does not represent any real resource in the system and can therefore not be instanciated. It is used as a MO-reference that can refer to multiple MO types.</description>
+            <interfaceOnly/>
+        </class>
+    </mim>
+    <interMim>
+        <relationship name="systemHandling_to_CpFileSystemM">
+            <domainExtension domain="CoreMW">
+                <extension name="splitImmDn" value="true"/>
+            </domainExtension>
+            <containment>
+                <parent>
+                    <hasClass name="SystemHandling">
+                        <mimName>AxeFunctions</mimName>
+                    </hasClass>
+                </parent>
+                <child>
+                    <hasClass name="CpFileSystemM">
+                        <mimName>AxeCpFileSystem</mimName>
+                    </hasClass>
+                    <cardinality>
+                        <min>1</min>
+                        <max>1</max>
+                    </cardinality>
+                </child>
+                <domainExtension domain="ECIM">
+                    <extension name="canCreate" value="true"/>
+                    <extension name="canDelete" value="true"/>
+                </domainExtension>
+            </containment>
+        </relationship>
+    </interMim>
+    <mib correction="0" name="AxeCpFileSystemInstances" release="0" version="1">
+        <object parentDn="">
+            <hasClass name="CpFileSystemM">
+                <mimName>AxeCpFileSystem</mimName>
+            </hasClass>
+            <slot name="cpFileSystemMId">
+                <value>1</value>
+            </slot>
+            <slot name="blockTransferTimeSlice">
+                <value>10000</value>
+            </slot>
+        </object>
+    </mib>
+</models>

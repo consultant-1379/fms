@@ -1,0 +1,35 @@
+# NT config spec for the P9 project (APZ 11.3) at Teleca Networks ver 05-07-14
+# author: Gunnar Andersson
+
+# CNZ label used when labling CAA och CXC (fill in CNZ label)
+# element * CNZ220xxxx_Rx_CNIxxx
+
+element * CHECKEDOUT
+
+# Bug branch for specific problem (fill in TR number)
+# element * .../osd_hfxxxxx/LATEST
+# mkbranch osd_hfxxxxx -override
+
+# Fill in date if someone is still working on previous version
+# time 10-Jul.19:00
+
+# The ACS directories / files
+element /ntacs/... .../osd_bugfix_p9/LATEST
+element /ntacs/... BUGFIX_P9_P1A -mkbranch osd_bugfix_p9
+element /ntacs/... .../al_p9/LATEST -mkbranch osd_bugfix_p9
+element /ntacs/... P9_P1A -mkbranch osd_bugfix_p9
+element /ntacs/... /main/LATEST -mkbranch osd_bugfix_p9
+
+# The CPFCOMP directories / files
+element /sio_fms/... .../osd_bugfix_ingo4_drop2/LATEST -nocheckout
+element /sio_fms/... BUGFIX_INGO4_DROP2_P1A -nocheckout
+element /sio_fms/... /main/LATEST -nocheckout
+
+# The GOH2.1 directories / files
+element /ntaes/... .../osd_bugfix_ingo4_drop2/LATEST -nocheckout
+element /ntaes/... BUGFIX_INGO4_DROP2_P1A -nocheckout
+element /ntaes/... /main/LATEST -nocheckout
+
+# other files / directories for viewing only:
+element * /main/LATEST -nocheckout
+

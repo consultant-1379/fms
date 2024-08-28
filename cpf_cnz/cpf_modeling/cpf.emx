@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CoreMWProfile="http:///schemas/CoreMWProfile/_J3KmYPFaEd-Ts8jlz8Preg/15" xmlns:Default="http:///schemas/Default/1" xmlns:ECIMBaseProfile="http:///schemas/ECIMBaseProfile/_z6Lx8AazEeCKpN5V4a4GyA/514" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/CoreMWProfile/_J3KmYPFaEd-Ts8jlz8Preg/15 pathmap://COREMW_PROFILE/CoreMW_Profile.epx#_J3KmYfFaEd-Ts8jlz8Preg?CoreMW%20Profile/CoreMWProfile? http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/ECIMBaseProfile/_z6Lx8AazEeCKpN5V4a4GyA/514 pathmap://ECIM_BASE_PROFILE/ECIM_Base_Profile.epx#_z6OOMAazEeCKpN5V4a4GyA?ECIM%20Base%20Profile/ECIMBaseProfile?">
+  <uml:Model xmi:id="_NRAMoAwOEdmFcaeZXPdWAQ" name="CPF" clientDependency="_Rde1IIW6Ed-FBpQGdJXi3g _OS1OUIXLEd-lToFzlKoOsA">
+    <eAnnotations xmi:id="_NRAMoQwOEdmFcaeZXPdWAQ" source="uml2.diagrams">
+      <contents xmi:type="notation:Diagram" xmi:id="_-vKi8He7EeC4X4M9XQqfgg" type="Class" name="CPF">
+        <children xmi:id="_C3UEEHe8EeC4X4M9XQqfgg" element="_MRXZI3e7EeC4X4M9XQqfgg">
+          <children xmi:id="_C3VSMHe8EeC4X4M9XQqfgg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_C3VSMXe8EeC4X4M9XQqfgg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_C3VSMne8EeC4X4M9XQqfgg" type="Stereotype"/>
+          <children xmi:id="_C3V5QHe8EeC4X4M9XQqfgg" type="Name"/>
+          <children xmi:id="_C3V5QXe8EeC4X4M9XQqfgg" type="Parent"/>
+          <children xmi:id="_C3WgUHe8EeC4X4M9XQqfgg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_C3WgUXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_C3XHYHe8EeC4X4M9XQqfgg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_C3XHYXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_C3XucHe8EeC4X4M9XQqfgg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_C3XucXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_C3YVgHe8EeC4X4M9XQqfgg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_C3YVgXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_C3UEEXe8EeC4X4M9XQqfgg" fontName="Sans" showStereotype="Image"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C3UEEne8EeC4X4M9XQqfgg" x="16416" y="912" width="11848"/>
+        </children>
+        <children xmi:id="_DSgLQHe8EeC4X4M9XQqfgg" element="_MRXZLXe7EeC4X4M9XQqfgg">
+          <children xmi:id="_DShZYHe8EeC4X4M9XQqfgg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_DShZYXe8EeC4X4M9XQqfgg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_DShZYne8EeC4X4M9XQqfgg" type="Stereotype"/>
+          <children xmi:id="_DShZY3e8EeC4X4M9XQqfgg" type="Name"/>
+          <children xmi:id="_DSiAcHe8EeC4X4M9XQqfgg" type="Parent"/>
+          <children xmi:id="_DSiAcXe8EeC4X4M9XQqfgg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_DSiAcne8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_DSingHe8EeC4X4M9XQqfgg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_DSingXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_DSingne8EeC4X4M9XQqfgg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_DSing3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_DSjOkHe8EeC4X4M9XQqfgg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_DSjOkXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_DSgLQXe8EeC4X4M9XQqfgg" fontName="Sans" showListSignature="true" showStereotype="Image"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DSgLQne8EeC4X4M9XQqfgg" x="13376" y="6080" width="17300"/>
+        </children>
+        <children xmi:id="_Dp3iYHe8EeC4X4M9XQqfgg" element="_MRYAf3e7EeC4X4M9XQqfgg">
+          <children xmi:id="_Dp4JcHe8EeC4X4M9XQqfgg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_Dp4JcXe8EeC4X4M9XQqfgg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_Dp4wgHe8EeC4X4M9XQqfgg" type="Stereotype"/>
+          <children xmi:id="_Dp4wgXe8EeC4X4M9XQqfgg" type="Name"/>
+          <children xmi:id="_Dp4wgne8EeC4X4M9XQqfgg" type="Parent"/>
+          <children xmi:id="_Dp4wg3e8EeC4X4M9XQqfgg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Dp4whHe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_Dp5XkHe8EeC4X4M9XQqfgg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Dp5XkXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_Dp5Xkne8EeC4X4M9XQqfgg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Dp5Xk3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_Dp5XlHe8EeC4X4M9XQqfgg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Dp5XlXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Dp3iYXe8EeC4X4M9XQqfgg" fontName="Sans" showStereotype="Image"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dp3iYne8EeC4X4M9XQqfgg" x="1520" y="16112" width="12458"/>
+        </children>
+        <children xmi:id="_FNRO0He8EeC4X4M9XQqfgg" element="_MRYAY3e7EeC4X4M9XQqfgg">
+          <children xmi:id="_FNR14He8EeC4X4M9XQqfgg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_FNR14Xe8EeC4X4M9XQqfgg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_FNR14ne8EeC4X4M9XQqfgg" type="Stereotype"/>
+          <children xmi:id="_FNSc8He8EeC4X4M9XQqfgg" type="Name"/>
+          <children xmi:id="_FNSc8Xe8EeC4X4M9XQqfgg" type="Parent"/>
+          <children xmi:id="_FNTEAHe8EeC4X4M9XQqfgg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FNTEAXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_FNTEAne8EeC4X4M9XQqfgg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FNTEA3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_FNTrEHe8EeC4X4M9XQqfgg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FNTrEXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_FNTrEne8EeC4X4M9XQqfgg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_FNTrE3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_FNRO0Xe8EeC4X4M9XQqfgg" fontName="Sans" showStereotype="Image"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FNRO0ne8EeC4X4M9XQqfgg" x="30704" y="16112" width="12762"/>
+        </children>
+        <children xmi:id="_F8uV0He8EeC4X4M9XQqfgg" element="_MRYAU3e7EeC4X4M9XQqfgg">
+          <children xmi:id="_F8vj8He8EeC4X4M9XQqfgg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_F8vj8Xe8EeC4X4M9XQqfgg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_F8vj8ne8EeC4X4M9XQqfgg" type="Stereotype"/>
+          <children xmi:id="_F8vj83e8EeC4X4M9XQqfgg" type="Name"/>
+          <children xmi:id="_F8wLAHe8EeC4X4M9XQqfgg" type="Parent"/>
+          <children xmi:id="_F8wLAXe8EeC4X4M9XQqfgg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F8wLAne8EeC4X4M9XQqfgg"/>
+            <layoutConstraint xmi:type="notation:Ratio" xmi:id="_6d57oIqfEeCHGPEHyBmkSA" value="0.8790683786204837"/>
+          </children>
+          <children xmi:id="_F8wyEHe8EeC4X4M9XQqfgg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F8wyEXe8EeC4X4M9XQqfgg" collapsed="true"/>
+            <layoutConstraint xmi:type="notation:Ratio" xmi:id="_6d6isIqfEeCHGPEHyBmkSA" value="0.12093162137951627"/>
+          </children>
+          <children xmi:id="_F8wyEne8EeC4X4M9XQqfgg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F8wyE3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_F8xZIHe8EeC4X4M9XQqfgg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_F8xZIXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_F8uV0Xe8EeC4X4M9XQqfgg" fontName="Sans" showStereotype="Image"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F8uV0ne8EeC4X4M9XQqfgg" x="15808" y="16112" width="12455" height="4529"/>
+        </children>
+        <children xmi:id="_GQdxMHe8EeC4X4M9XQqfgg" element="_MRYAz3e7EeC4X4M9XQqfgg">
+          <children xmi:id="_GQdxM3e8EeC4X4M9XQqfgg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_GQdxNHe8EeC4X4M9XQqfgg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_GQeYQHe8EeC4X4M9XQqfgg" type="Stereotype"/>
+          <children xmi:id="_GQeYQXe8EeC4X4M9XQqfgg" type="Name"/>
+          <children xmi:id="_GQeYQne8EeC4X4M9XQqfgg" type="Parent"/>
+          <children xmi:id="_GQe_UHe8EeC4X4M9XQqfgg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GQe_UXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_GQe_Une8EeC4X4M9XQqfgg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GQe_U3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_GQe_VHe8EeC4X4M9XQqfgg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GQe_VXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_GQe_Vne8EeC4X4M9XQqfgg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_GQe_V3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_GQdxMXe8EeC4X4M9XQqfgg" fontName="Sans" showStereotype="Image"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GQdxMne8EeC4X4M9XQqfgg" x="17024" y="26448" width="11239"/>
+        </children>
+        <children xmi:id="_OiLIsHe8EeC4X4M9XQqfgg">
+          <children xmi:id="_OiNk8He8EeC4X4M9XQqfgg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_OiNk8Xe8EeC4X4M9XQqfgg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_OiNk8ne8EeC4X4M9XQqfgg" type="Stereotype"/>
+          <children xmi:id="_OiOMAHe8EeC4X4M9XQqfgg" type="Name"/>
+          <children xmi:id="_OiOMAXe8EeC4X4M9XQqfgg" type="Parent"/>
+          <children xmi:id="_OiOMAne8EeC4X4M9XQqfgg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OiOMA3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_OiOzEHe8EeC4X4M9XQqfgg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OiOzEXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_OiOzEne8EeC4X4M9XQqfgg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OiOzE3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_OiPaIHe8EeC4X4M9XQqfgg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_OiPaIXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OiLIsXe8EeC4X4M9XQqfgg" fontName="Sans" showStereotype="Image"/>
+          <element xmi:type="uml:Class" href="platform:/resource/ECIM_Fragments/ECIM_FileM_1.0.emx#_HzxDcOMxEd-kQ-bA_LUmHA?ECIM_FileM/ECIM_FileM/FileGroup?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OiLIsne8EeC4X4M9XQqfgg" x="3344"/>
+        </children>
+        <children xmi:id="_QL1OIHe8EeC4X4M9XQqfgg" element="_MRYA7Xe7EeC4X4M9XQqfgg">
+          <children xmi:id="_QL11MHe8EeC4X4M9XQqfgg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_QL11MXe8EeC4X4M9XQqfgg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_QL11Mne8EeC4X4M9XQqfgg" type="Stereotype"/>
+          <children xmi:id="_QL11M3e8EeC4X4M9XQqfgg" type="Kind"/>
+          <children xmi:id="_QL2cQHe8EeC4X4M9XQqfgg" type="Name"/>
+          <children xmi:id="_QL2cQXe8EeC4X4M9XQqfgg" type="Parent"/>
+          <children xmi:id="_QL2cQne8EeC4X4M9XQqfgg" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_QL2cQ3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_QL3DUHe8EeC4X4M9XQqfgg" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_QL3DUXe8EeC4X4M9XQqfgg"/>
+          </children>
+          <children xmi:id="_QL3DUne8EeC4X4M9XQqfgg" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_QL3DU3e8EeC4X4M9XQqfgg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_QL1OIXe8EeC4X4M9XQqfgg" fontName="Sans" showStereotype="Image"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QL1OIne8EeC4X4M9XQqfgg" x="33440" y="7600" width="7884"/>
+        </children>
+        <children xmi:id="_o427kH0tEeChc7QVgHP1-Q" element="_mQ4zwH0tEeChc7QVgHP1-Q">
+          <children xmi:id="_o45-4H0tEeChc7QVgHP1-Q" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_o45-4X0tEeChc7QVgHP1-Q" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_o45-4n0tEeChc7QVgHP1-Q" type="Stereotype"/>
+          <children xmi:id="_o46l8H0tEeChc7QVgHP1-Q" type="Name"/>
+          <children xmi:id="_o46l8X0tEeChc7QVgHP1-Q" type="Parent"/>
+          <children xmi:id="_o47NAH0tEeChc7QVgHP1-Q" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_o47NAX0tEeChc7QVgHP1-Q"/>
+          </children>
+          <children xmi:id="_o470EH0tEeChc7QVgHP1-Q" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_o470EX0tEeChc7QVgHP1-Q"/>
+          </children>
+          <children xmi:id="_o48bIH0tEeChc7QVgHP1-Q" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_o48bIX0tEeChc7QVgHP1-Q"/>
+          </children>
+          <children xmi:id="_o48bIn0tEeChc7QVgHP1-Q" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_o48bI30tEeChc7QVgHP1-Q"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_o427kX0tEeChc7QVgHP1-Q" fontName="Sans" showStereotype="Image"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o427kn0tEeChc7QVgHP1-Q" x="1824" y="27360" width="11767"/>
+        </children>
+        <children xmi:id="_TLU-kIFTEeCHXpdXyfqLmA">
+          <children xmi:id="_TLWMsIFTEeCHXpdXyfqLmA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_TLWMsYFTEeCHXpdXyfqLmA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_TLWzwIFTEeCHXpdXyfqLmA" type="Stereotype"/>
+          <children xmi:id="_TLWzwYFTEeCHXpdXyfqLmA" type="Name"/>
+          <children xmi:id="_TLXa0IFTEeCHXpdXyfqLmA" type="Parent"/>
+          <children xmi:id="_TLYo8IFTEeCHXpdXyfqLmA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TLYo8YFTEeCHXpdXyfqLmA"/>
+          </children>
+          <children xmi:id="_TLZQAIFTEeCHXpdXyfqLmA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TLZQAYFTEeCHXpdXyfqLmA"/>
+          </children>
+          <children xmi:id="_TLZ3EIFTEeCHXpdXyfqLmA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TLZ3EYFTEeCHXpdXyfqLmA"/>
+          </children>
+          <children xmi:id="_TLaeIIFTEeCHXpdXyfqLmA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_TLaeIYFTEeCHXpdXyfqLmA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_TLU-kYFTEeCHXpdXyfqLmA" fontName="Sans" showStereotype="Image"/>
+          <element xmi:type="uml:Class" href="platform:/resource/AXE_Fragment/CoreMW%20Profile%20Model.emx#_HDfBICMbEeC0u-VaxGzu_A?AXE_Model/ApzMom/ApzFunctions?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TLU-koFTEeCHXpdXyfqLmA" x="17328" y="-3344" width="10324"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_-vKi8Xe7EeC4X4M9XQqfgg"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_DSmR4He8EeC4X4M9XQqfgg" element="_MRYAv3e7EeC4X4M9XQqfgg" source="_C3UEEHe8EeC4X4M9XQqfgg" target="_DSgLQHe8EeC4X4M9XQqfgg">
+          <children xmi:id="_DSngAHe8EeC4X4M9XQqfgg" type="NameLabel">
+            <children xmi:id="_DSoHEHe8EeC4X4M9XQqfgg" type="Stereotype"/>
+            <children xmi:id="_DSoHEXe8EeC4X4M9XQqfgg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DSngAXe8EeC4X4M9XQqfgg" x="-152" y="201"/>
+          </children>
+          <children xmi:id="_DSouIHe8EeC4X4M9XQqfgg" type="ToMultiplicityLabel" element="_MRYAwHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_DSqjUHe8EeC4X4M9XQqfgg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DSouIXe8EeC4X4M9XQqfgg" y="508"/>
+          </children>
+          <children xmi:id="_DSrKYHe8EeC4X4M9XQqfgg" type="ToRoleLabel" element="_MRYAwHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_DSrxcHe8EeC4X4M9XQqfgg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DSrKYXe8EeC4X4M9XQqfgg" x="-32" y="-959"/>
+          </children>
+          <children xmi:id="_DSrxcXe8EeC4X4M9XQqfgg" type="FromMultiplicityLabel" element="_MRXZKHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_DSsYgHe8EeC4X4M9XQqfgg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DSrxcne8EeC4X4M9XQqfgg" y="508"/>
+          </children>
+          <children xmi:id="_DStmoHe8EeC4X4M9XQqfgg" type="FromRoleLabel" element="_MRXZKHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_DStmone8EeC4X4M9XQqfgg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DStmoXe8EeC4X4M9XQqfgg" x="-211" y="-1185"/>
+          </children>
+          <children xmi:id="_DSuNsHe8EeC4X4M9XQqfgg" type="ToQualifierLabel" element="_MRYAwHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_DSu0wHe8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_DSu0wXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DSuNsXe8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_DSu0wne8EeC4X4M9XQqfgg" type="FromQualifierLabel" element="_MRXZKHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_DSu0xHe8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_DSu0xXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DSu0w3e8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_DSvb0He8EeC4X4M9XQqfgg" type="ToConstraintLabel" element="_MRYAwHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_DSvb0ne8EeC4X4M9XQqfgg" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_DSvb03e8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DSvb0Xe8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <children xmi:id="_DSwC4He8EeC4X4M9XQqfgg" type="FromConstraintLabel" element="_MRXZKHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_DSwC4ne8EeC4X4M9XQqfgg" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_DSwC43e8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DSwC4Xe8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_DSmR4Xe8EeC4X4M9XQqfgg" fontName="Sans" lineWidth="1" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DSmR4ne8EeC4X4M9XQqfgg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_Dp6lsHe8EeC4X4M9XQqfgg" element="_MRYAx3e7EeC4X4M9XQqfgg" source="_DSgLQHe8EeC4X4M9XQqfgg" target="_Dp3iYHe8EeC4X4M9XQqfgg">
+          <children xmi:id="_Dp6ls3e8EeC4X4M9XQqfgg" type="NameLabel">
+            <children xmi:id="_Dp6ltXe8EeC4X4M9XQqfgg" type="Stereotype"/>
+            <children xmi:id="_Dp7MwHe8EeC4X4M9XQqfgg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dp6ltHe8EeC4X4M9XQqfgg" x="162" y="-171"/>
+          </children>
+          <children xmi:id="_Dp7MwXe8EeC4X4M9XQqfgg" type="ToMultiplicityLabel" element="_MRYAyHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_Dp7Mw3e8EeC4X4M9XQqfgg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dp7Mwne8EeC4X4M9XQqfgg" x="60" y="387"/>
+          </children>
+          <children xmi:id="_Dp7MxHe8EeC4X4M9XQqfgg" type="ToRoleLabel" element="_MRYAyHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_Dp7z0He8EeC4X4M9XQqfgg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dp7MxXe8EeC4X4M9XQqfgg" x="-1426" y="-1024"/>
+          </children>
+          <children xmi:id="_Dp7z0Xe8EeC4X4M9XQqfgg" type="FromMultiplicityLabel" element="_MRXZO3e7EeC4X4M9XQqfgg">
+            <children xmi:id="_Dp7z03e8EeC4X4M9XQqfgg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dp7z0ne8EeC4X4M9XQqfgg" x="1052" y="539"/>
+          </children>
+          <children xmi:id="_Dp7z1He8EeC4X4M9XQqfgg" type="FromRoleLabel" element="_MRXZO3e7EeC4X4M9XQqfgg">
+            <children xmi:id="_Dp8a4He8EeC4X4M9XQqfgg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dp7z1Xe8EeC4X4M9XQqfgg" x="-915" y="-1054"/>
+          </children>
+          <children xmi:id="_Dp8a4Xe8EeC4X4M9XQqfgg" type="ToQualifierLabel" element="_MRYAyHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_Dp8a43e8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Dp8a5He8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dp8a4ne8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_Dp8a5Xe8EeC4X4M9XQqfgg" type="FromQualifierLabel" element="_MRXZO3e7EeC4X4M9XQqfgg">
+            <children xmi:id="_Dp9B8He8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Dp9B8Xe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dp8a5ne8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_Dp9B8ne8EeC4X4M9XQqfgg" type="ToConstraintLabel" element="_MRYAyHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_Dp9B9He8EeC4X4M9XQqfgg" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Dp9B9Xe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dp9B83e8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <children xmi:id="_Dp9B9ne8EeC4X4M9XQqfgg" type="FromConstraintLabel" element="_MRXZO3e7EeC4X4M9XQqfgg">
+            <children xmi:id="_Dp9pAHe8EeC4X4M9XQqfgg" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Dp9pAXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dp9B93e8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Dp6lsXe8EeC4X4M9XQqfgg" fontName="Sans" lineWidth="1" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Dp6lsne8EeC4X4M9XQqfgg" points="[-3618, 2502, 11216, -7756]$[-9260, 6404, 5574, -3854]"/>
+        </edges>
+        <edges xmi:id="_FNU5MHe8EeC4X4M9XQqfgg" element="_MRYAw3e7EeC4X4M9XQqfgg" source="_DSgLQHe8EeC4X4M9XQqfgg" target="_FNRO0He8EeC4X4M9XQqfgg">
+          <children xmi:id="_FNU5M3e8EeC4X4M9XQqfgg" type="NameLabel">
+            <children xmi:id="_FNVgQHe8EeC4X4M9XQqfgg" type="Stereotype"/>
+            <children xmi:id="_FNVgQXe8EeC4X4M9XQqfgg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FNU5NHe8EeC4X4M9XQqfgg" x="295" y="75"/>
+          </children>
+          <children xmi:id="_FNVgQne8EeC4X4M9XQqfgg" type="ToMultiplicityLabel" element="_MRYAxHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_FNWHUHe8EeC4X4M9XQqfgg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNVgQ3e8EeC4X4M9XQqfgg" y="508"/>
+          </children>
+          <children xmi:id="_FNWHUXe8EeC4X4M9XQqfgg" type="ToRoleLabel" element="_MRYAxHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_FNWuYHe8EeC4X4M9XQqfgg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNWHUne8EeC4X4M9XQqfgg" x="1012" y="-532"/>
+          </children>
+          <children xmi:id="_FNWuYXe8EeC4X4M9XQqfgg" type="FromMultiplicityLabel" element="_MRXZOHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_FNWuY3e8EeC4X4M9XQqfgg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNWuYne8EeC4X4M9XQqfgg" y="508"/>
+          </children>
+          <children xmi:id="_FNXVcHe8EeC4X4M9XQqfgg" type="FromRoleLabel" element="_MRXZOHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_FNXVcne8EeC4X4M9XQqfgg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNXVcXe8EeC4X4M9XQqfgg" x="882" y="-1016"/>
+          </children>
+          <children xmi:id="_FNXVc3e8EeC4X4M9XQqfgg" type="ToQualifierLabel" element="_MRYAxHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_FNX8gHe8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FNX8gXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNXVdHe8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_FNX8gne8EeC4X4M9XQqfgg" type="FromQualifierLabel" element="_MRXZOHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_FNYjkHe8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FNYjkXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNX8g3e8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_FNYjkne8EeC4X4M9XQqfgg" type="ToConstraintLabel" element="_MRYAxHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_FNYjlHe8EeC4X4M9XQqfgg" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FNYjlXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNYjk3e8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <children xmi:id="_FNZKoHe8EeC4X4M9XQqfgg" type="FromConstraintLabel" element="_MRXZOHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_FNZKone8EeC4X4M9XQqfgg" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FNZKo3e8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNZKoXe8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_FNU5MXe8EeC4X4M9XQqfgg" fontName="Sans" lineWidth="1" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FNU5Mne8EeC4X4M9XQqfgg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_F8yAMHe8EeC4X4M9XQqfgg" element="_MRYAy3e7EeC4X4M9XQqfgg" source="_DSgLQHe8EeC4X4M9XQqfgg" target="_F8uV0He8EeC4X4M9XQqfgg">
+          <children xmi:id="_F8ynQHe8EeC4X4M9XQqfgg" type="NameLabel">
+            <children xmi:id="_F8ynQne8EeC4X4M9XQqfgg" type="Stereotype"/>
+            <children xmi:id="_F8zOUHe8EeC4X4M9XQqfgg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F8ynQXe8EeC4X4M9XQqfgg" x="109" y="-415"/>
+          </children>
+          <children xmi:id="_F8zOUXe8EeC4X4M9XQqfgg" type="ToMultiplicityLabel" element="_MRYAzHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_F8zOU3e8EeC4X4M9XQqfgg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_F8zOUne8EeC4X4M9XQqfgg" x="-369" y="452"/>
+          </children>
+          <children xmi:id="_F8z1YHe8EeC4X4M9XQqfgg" type="ToRoleLabel" element="_MRYAzHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_F8z1Yne8EeC4X4M9XQqfgg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_F8z1YXe8EeC4X4M9XQqfgg" x="171" y="-1159"/>
+          </children>
+          <children xmi:id="_F8z1Y3e8EeC4X4M9XQqfgg" type="FromMultiplicityLabel" element="_MRYAMne7EeC4X4M9XQqfgg">
+            <children xmi:id="_F80ccHe8EeC4X4M9XQqfgg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_F8z1ZHe8EeC4X4M9XQqfgg" y="508"/>
+          </children>
+          <children xmi:id="_F80ccXe8EeC4X4M9XQqfgg" type="FromRoleLabel" element="_MRYAMne7EeC4X4M9XQqfgg">
+            <children xmi:id="_F80cc3e8EeC4X4M9XQqfgg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_F80ccne8EeC4X4M9XQqfgg" x="514" y="-1429"/>
+          </children>
+          <children xmi:id="_F81DgHe8EeC4X4M9XQqfgg" type="ToQualifierLabel" element="_MRYAzHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_F81Dgne8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F81Dg3e8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_F81DgXe8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_F81qkHe8EeC4X4M9XQqfgg" type="FromQualifierLabel" element="_MRYAMne7EeC4X4M9XQqfgg">
+            <children xmi:id="_F81qkne8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F81qk3e8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_F81qkXe8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_F81qlHe8EeC4X4M9XQqfgg" type="ToConstraintLabel" element="_MRYAzHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_F824sHe8EeC4X4M9XQqfgg" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F824sXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_F81qlXe8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <children xmi:id="_F824sne8EeC4X4M9XQqfgg" type="FromConstraintLabel" element="_MRYAMne7EeC4X4M9XQqfgg">
+            <children xmi:id="_F83fwHe8EeC4X4M9XQqfgg" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F83fwXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_F824s3e8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_F8yAMXe8EeC4X4M9XQqfgg" fontName="Sans" lineWidth="1" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F8yAMne8EeC4X4M9XQqfgg" points="[1374, 2502, -5544, -10102]$[5685, 10356, -1233, -2248]"/>
+        </edges>
+        <edges xmi:id="_GQfmYHe8EeC4X4M9XQqfgg" element="_MRYA6Xe7EeC4X4M9XQqfgg" source="_F8uV0He8EeC4X4M9XQqfgg" target="_GQdxMHe8EeC4X4M9XQqfgg">
+          <children xmi:id="_GQgNcne8EeC4X4M9XQqfgg" type="NameLabel">
+            <children xmi:id="_GQgNdHe8EeC4X4M9XQqfgg" type="Stereotype"/>
+            <children xmi:id="_GQgNdXe8EeC4X4M9XQqfgg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GQgNc3e8EeC4X4M9XQqfgg" x="421" y="-58" width="4401" height="844"/>
+          </children>
+          <children xmi:id="_GQg0gHe8EeC4X4M9XQqfgg" type="ToMultiplicityLabel" element="_MRYA6ne7EeC4X4M9XQqfgg">
+            <children xmi:id="_GQg0gne8EeC4X4M9XQqfgg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GQg0gXe8EeC4X4M9XQqfgg" x="531" y="382"/>
+          </children>
+          <children xmi:id="_GQg0g3e8EeC4X4M9XQqfgg" type="ToRoleLabel" element="_MRYA6ne7EeC4X4M9XQqfgg">
+            <children xmi:id="_GQg0hXe8EeC4X4M9XQqfgg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GQg0hHe8EeC4X4M9XQqfgg" x="-262" y="-1672"/>
+          </children>
+          <children xmi:id="_GQhbkHe8EeC4X4M9XQqfgg" type="FromMultiplicityLabel" element="_MRYAYHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_GQhbkne8EeC4X4M9XQqfgg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GQhbkXe8EeC4X4M9XQqfgg" y="508"/>
+          </children>
+          <children xmi:id="_GQhbk3e8EeC4X4M9XQqfgg" type="FromRoleLabel" element="_MRYAYHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_GQhblXe8EeC4X4M9XQqfgg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GQhblHe8EeC4X4M9XQqfgg" x="-238" y="-1130"/>
+          </children>
+          <children xmi:id="_GQhblne8EeC4X4M9XQqfgg" type="ToQualifierLabel" element="_MRYA6ne7EeC4X4M9XQqfgg">
+            <children xmi:id="_GQiCoHe8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GQiCoXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GQhbl3e8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_GQiCone8EeC4X4M9XQqfgg" type="FromQualifierLabel" element="_MRYAYHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_GQiCpHe8EeC4X4M9XQqfgg" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GQiCpXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GQiCo3e8EeC4X4M9XQqfgg" y="-238"/>
+          </children>
+          <children xmi:id="_GQiCpne8EeC4X4M9XQqfgg" type="ToConstraintLabel" element="_MRYA6ne7EeC4X4M9XQqfgg">
+            <children xmi:id="_GQipsHe8EeC4X4M9XQqfgg" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GQipsXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GQiCp3e8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <children xmi:id="_GQipsne8EeC4X4M9XQqfgg" type="FromConstraintLabel" element="_MRYAYHe7EeC4X4M9XQqfgg">
+            <children xmi:id="_GQiptHe8EeC4X4M9XQqfgg" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GQiptXe8EeC4X4M9XQqfgg"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GQips3e8EeC4X4M9XQqfgg" y="1354"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_GQgNcHe8EeC4X4M9XQqfgg" fontName="Sans" lineWidth="1" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GQgNcXe8EeC4X4M9XQqfgg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_Oiza0He8EeC4X4M9XQqfgg" element="_MRXZK3e7EeC4X4M9XQqfgg" source="_C3UEEHe8EeC4X4M9XQqfgg" target="_OiLIsHe8EeC4X4M9XQqfgg">
+          <children xmi:id="_Oi0B4He8EeC4X4M9XQqfgg" type="FromMultiplicityLabel">
+            <children xmi:id="_Oi0B4ne8EeC4X4M9XQqfgg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Oi0B4Xe8EeC4X4M9XQqfgg" y="508"/>
+          </children>
+          <children xmi:id="_Oi0o8He8EeC4X4M9XQqfgg" type="FromRoleLabel">
+            <children xmi:id="_Oi0o8ne8EeC4X4M9XQqfgg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Oi0o8Xe8EeC4X4M9XQqfgg" x="-598" y="-382"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Oiza0Xe8EeC4X4M9XQqfgg" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Oiza0ne8EeC4X4M9XQqfgg" points="[-150, -15, 384, 37]$[-534, -52, 0, 0]"/>
+        </edges>
+        <edges xmi:id="__nidgH0uEeChc7QVgHP1-Q" element="_-n4-YH0uEeChc7QVgHP1-Q" source="_Dp3iYHe8EeC4X4M9XQqfgg" target="_o427kH0tEeChc7QVgHP1-Q">
+          <children xmi:id="__nidg30uEeChc7QVgHP1-Q" type="NameLabel">
+            <children xmi:id="__njEkH0uEeChc7QVgHP1-Q" type="Stereotype"/>
+            <children xmi:id="__njEkX0uEeChc7QVgHP1-Q" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__nidhH0uEeChc7QVgHP1-Q" x="97" y="-117"/>
+          </children>
+          <children xmi:id="__njEkn0uEeChc7QVgHP1-Q" type="ToMultiplicityLabel" element="_-n5lcn0uEeChc7QVgHP1-Q">
+            <children xmi:id="__njElH0uEeChc7QVgHP1-Q" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__njEk30uEeChc7QVgHP1-Q" x="120" y="648"/>
+          </children>
+          <children xmi:id="__njroH0uEeChc7QVgHP1-Q" type="ToRoleLabel" element="_-n5lcn0uEeChc7QVgHP1-Q">
+            <children xmi:id="__njron0uEeChc7QVgHP1-Q" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__njroX0uEeChc7QVgHP1-Q" x="-184" y="-1533"/>
+          </children>
+          <children xmi:id="__njro30uEeChc7QVgHP1-Q" type="FromMultiplicityLabel" element="_-n4-YX0uEeChc7QVgHP1-Q">
+            <children xmi:id="__njrpX0uEeChc7QVgHP1-Q" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__njrpH0uEeChc7QVgHP1-Q" y="508"/>
+          </children>
+          <children xmi:id="__nkSsH0uEeChc7QVgHP1-Q" type="FromRoleLabel" element="_-n4-YX0uEeChc7QVgHP1-Q">
+            <children xmi:id="__nk5wH0uEeChc7QVgHP1-Q" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__nkSsX0uEeChc7QVgHP1-Q" x="75" y="-908"/>
+          </children>
+          <children xmi:id="__nlg0H0uEeChc7QVgHP1-Q" type="ToQualifierLabel" element="_-n5lcn0uEeChc7QVgHP1-Q">
+            <children xmi:id="__nlg0n0uEeChc7QVgHP1-Q" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__nlg030uEeChc7QVgHP1-Q"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__nlg0X0uEeChc7QVgHP1-Q" y="-190"/>
+          </children>
+          <children xmi:id="__nlg1H0uEeChc7QVgHP1-Q" type="FromQualifierLabel" element="_-n4-YX0uEeChc7QVgHP1-Q">
+            <children xmi:id="__nlg1n0uEeChc7QVgHP1-Q" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__nlg130uEeChc7QVgHP1-Q"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__nlg1X0uEeChc7QVgHP1-Q" y="-190"/>
+          </children>
+          <children xmi:id="__nmH4H0uEeChc7QVgHP1-Q" type="ToConstraintLabel" element="_-n5lcn0uEeChc7QVgHP1-Q">
+            <children xmi:id="__nmH4n0uEeChc7QVgHP1-Q" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__nmH430uEeChc7QVgHP1-Q"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__nmH4X0uEeChc7QVgHP1-Q" y="1080"/>
+          </children>
+          <children xmi:id="__nmH5H0uEeChc7QVgHP1-Q" type="FromConstraintLabel" element="_-n4-YX0uEeChc7QVgHP1-Q">
+            <children xmi:id="__nmH5n0uEeChc7QVgHP1-Q" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__nmH530uEeChc7QVgHP1-Q"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__nmH5X0uEeChc7QVgHP1-Q" y="1080"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="__nidgX0uEeChc7QVgHP1-Q" fontName="Sans" lineWidth="1" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__nidgn0uEeChc7QVgHP1-Q" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_TLcTUIFTEeCHXpdXyfqLmA" element="_HT1MIIFTEeCHXpdXyfqLmA" source="_C3UEEHe8EeC4X4M9XQqfgg" target="_TLU-kIFTEeCHXpdXyfqLmA">
+          <children xmi:id="_TLcTU4FTEeCHXpdXyfqLmA" type="NameLabel">
+            <children xmi:id="_TLc6YIFTEeCHXpdXyfqLmA" type="Stereotype"/>
+            <children xmi:id="_TLc6YYFTEeCHXpdXyfqLmA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TLcTVIFTEeCHXpdXyfqLmA" x="-51" y="2318"/>
+          </children>
+          <children xmi:id="_TLc6YoFTEeCHXpdXyfqLmA" type="ToMultiplicityLabel" element="_HT3BUIFTEeCHXpdXyfqLmA">
+            <children xmi:id="_TLdhcIFTEeCHXpdXyfqLmA" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TLc6Y4FTEeCHXpdXyfqLmA" y="508"/>
+          </children>
+          <children xmi:id="_TLdhcYFTEeCHXpdXyfqLmA" visible="false" type="ToRoleLabel" element="_HT3BUIFTEeCHXpdXyfqLmA">
+            <children xmi:id="_TLevkIFTEeCHXpdXyfqLmA" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TLdhcoFTEeCHXpdXyfqLmA" x="20" y="-2051"/>
+          </children>
+          <children xmi:id="_TLevkYFTEeCHXpdXyfqLmA" type="FromMultiplicityLabel" element="_HT1zMIFTEeCHXpdXyfqLmA">
+            <children xmi:id="_TLfWoIFTEeCHXpdXyfqLmA" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TLevkoFTEeCHXpdXyfqLmA" y="508"/>
+          </children>
+          <children xmi:id="_TLfWoYFTEeCHXpdXyfqLmA" visible="false" type="FromRoleLabel" element="_HT1zMIFTEeCHXpdXyfqLmA">
+            <children xmi:id="_TLfWo4FTEeCHXpdXyfqLmA" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TLfWooFTEeCHXpdXyfqLmA" y="-508"/>
+          </children>
+          <children xmi:id="_TLf9sIFTEeCHXpdXyfqLmA" type="ToQualifierLabel" element="_HT3BUIFTEeCHXpdXyfqLmA">
+            <children xmi:id="_TLf9soFTEeCHXpdXyfqLmA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TLf9s4FTEeCHXpdXyfqLmA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TLf9sYFTEeCHXpdXyfqLmA" y="-238"/>
+          </children>
+          <children xmi:id="_TLgkwIFTEeCHXpdXyfqLmA" type="FromQualifierLabel" element="_HT1zMIFTEeCHXpdXyfqLmA">
+            <children xmi:id="_TLgkwoFTEeCHXpdXyfqLmA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TLgkw4FTEeCHXpdXyfqLmA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TLgkwYFTEeCHXpdXyfqLmA" y="-238"/>
+          </children>
+          <children xmi:id="_TLgkxIFTEeCHXpdXyfqLmA" type="ToConstraintLabel" element="_HT3BUIFTEeCHXpdXyfqLmA">
+            <children xmi:id="_TLhL0IFTEeCHXpdXyfqLmA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TLhL0YFTEeCHXpdXyfqLmA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TLgkxYFTEeCHXpdXyfqLmA" y="1354"/>
+          </children>
+          <children xmi:id="_TLhL0oFTEeCHXpdXyfqLmA" type="FromConstraintLabel" element="_HT1zMIFTEeCHXpdXyfqLmA">
+            <children xmi:id="_TLhL1IFTEeCHXpdXyfqLmA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TLhL1YFTEeCHXpdXyfqLmA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TLhL04FTEeCHXpdXyfqLmA" y="1354"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_TLcTUYFTEeCHXpdXyfqLmA" fontName="Sans" lineWidth="1" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TLcTUoFTEeCHXpdXyfqLmA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <eAnnotations xmi:id="_Ihf1IHe7EeC4X4M9XQqfgg" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+      <details xmi:id="_IhgcMHe7EeC4X4M9XQqfgg" key="com.ericsson.ecim.dsl.uireduction.activity" value="1"/>
+      <details xmi:id="_IhgcMXe7EeC4X4M9XQqfgg" key="com.ericsson.ecim.coremw.dsl.uireduction.activity" value="2"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_UV_98He7EeC4X4M9XQqfgg" annotatedElement="_NRAMoAwOEdmFcaeZXPdWAQ">
+      <body>CP File System model.&lt;br /></body>
+    </ownedComment>
+    <packageImport xmi:id="_8JbBoIW5Ed-FBpQGdJXi3g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_iT7qACCSEd-Egr3-YAWs7Q?EcimDataType?"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Rde1IIW6Ed-FBpQGdJXi3g" name="" client="_NRAMoAwOEdmFcaeZXPdWAQ">
+      <supplier xmi:type="uml:Model" href="pathmap://ECIM_GUIDELIB/ECIM_Guidelines.emx#_tFUKaXhYEd-e29ZwYMJd6w?ECIM%20Guidelines?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_OS1OUIXLEd-lToFzlKoOsA" name="" client="_NRAMoAwOEdmFcaeZXPdWAQ">
+      <supplier xmi:type="uml:Model" href="pathmap://ECIM_COREMW_GUIDELIB/ECIM_Core_MW_Guidelines.emx#_5vlRYnhQEd-OM9oMWC6jJQ?ECIM%20Core%20MW%20Guidelines?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_MRXZIHe7EeC4X4M9XQqfgg" name="AXE_CpFileSystem">
+      <eAnnotations xmi:id="_MRXZIXe7EeC4X4M9XQqfgg" source="uml2.diagrams"/>
+      <ownedComment xmi:id="_MRXZIne7EeC4X4M9XQqfgg" annotatedElement="_MRXZIHe7EeC4X4M9XQqfgg">
+        <body>&lt;p>
+            CP&amp;nbsp;File&amp;nbsp;System&amp;nbsp;Model
+        &lt;/p></body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MRXZI3e7EeC4X4M9XQqfgg" name="CpFileSystem">
+        <eAnnotations xmi:id="_MRXZJHe7EeC4X4M9XQqfgg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_MRXZJXe7EeC4X4M9XQqfgg" annotatedElement="_MRXZI3e7EeC4X4M9XQqfgg">
+          <body>&lt;p>
+            The&amp;nbsp;top&amp;nbsp;class&amp;nbsp;of&amp;nbsp;the&amp;nbsp;CP file system model.
+        &lt;/p></body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_MRXZJne7EeC4X4M9XQqfgg" name="cpFileSystemId" isReadOnly="true">
+          <ownedComment xmi:id="_MRXZJ3e7EeC4X4M9XQqfgg" annotatedElement="_MRXZJne7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;value&amp;nbsp;component&amp;nbsp;of&amp;nbsp;the&amp;nbsp;RDN.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRXZKHe7EeC4X4M9XQqfgg" name="cpVolumes" visibility="public" type="_MRXZLXe7EeC4X4M9XQqfgg" aggregation="composite" association="_MRYAv3e7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRXZKXe7EeC4X4M9XQqfgg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRXZKne7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRXZK3e7EeC4X4M9XQqfgg" name="externalFS">
+          <ownedComment xmi:id="_MRXZLHe7EeC4X4M9XQqfgg">
+            <body>Reference to import/export area</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="platform:/resource/ECIM_Fragments/ECIM_FileM_1.0.emx#_HzxDcOMxEd-kQ-bA_LUmHA?ECIM_FileM/ECIM_FileM/FileGroup?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hoq4kIwtEeCHGPEHyBmkSA"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_fIkL8IwwEeCHGPEHyBmkSA">
+            <body>NULL</body>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HT1zMIFTEeCHXpdXyfqLmA" name="apzFunction" visibility="public" association="_HT1MIIFTEeCHXpdXyfqLmA">
+          <type xmi:type="uml:Class" href="platform:/resource/AXE_Fragment/CoreMW%20Profile%20Model.emx#_HDfBICMbEeC0u-VaxGzu_A?AXE_Model/ApzMom/ApzFunctions?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HT2aQYFTEeCHXpdXyfqLmA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HT2aQIFTEeCHXpdXyfqLmA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MRXZLXe7EeC4X4M9XQqfgg" name="CpVolume">
+        <ownedComment xmi:id="_MRXZLne7EeC4X4M9XQqfgg" annotatedElement="_MRXZLXe7EeC4X4M9XQqfgg">
+          <body>&lt;p>
+            Instance&amp;nbsp;of&amp;nbsp;this&amp;nbsp;class&amp;nbsp;represents&amp;nbsp;a
+            volume&amp;nbsp;in&amp;nbsp;the&amp;nbsp;CP&amp;nbsp;file&amp;nbsp;system.&lt;br />
+             A CP volume can contain several CP files and subfiles. A CP file or subfile can only belong to one CP volume.&lt;br />
+        &lt;/p></body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_MRXZL3e7EeC4X4M9XQqfgg" name="cpVolumeId" isReadOnly="true">
+          <ownedComment xmi:id="_MRXZMHe7EeC4X4M9XQqfgg" annotatedElement="_MRXZL3e7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;value&amp;nbsp;component&amp;nbsp;of&amp;nbsp;the&amp;nbsp;RDN.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRXZMXe7EeC4X4M9XQqfgg" name="volumeName">
+          <ownedComment xmi:id="_MRXZMne7EeC4X4M9XQqfgg" annotatedElement="_MRXZMXe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;name&amp;nbsp;of&amp;nbsp;the CP volume.&lt;br />
+             A valid name is an alphanumeric string with a maximum length of fourteen characters. The name must start with an
+            alphabetic character.&lt;br />
+             Only the low hyphen symbol can be included in the name.&lt;br />
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRXZM3e7EeC4X4M9XQqfgg" name="cpName">
+          <ownedComment xmi:id="_MRXZNHe7EeC4X4M9XQqfgg" annotatedElement="_MRXZM3e7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The default Central Processor (CP) name or literal &quot;CLUSTER&quot; in a Multi-CP System.&lt;br />
+             A valid CP name is an alphanumeric string with a maximum length of seven characters.&lt;br />
+             It is empty in a Single-CP System.&lt;br />
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LUWbsIqdEeCHGPEHyBmkSA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J0AgQH-aEeCOzq40M5-XvA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRXZOHe7EeC4X4M9XQqfgg" name="simpleFile" visibility="public" type="_MRYAY3e7EeC4X4M9XQqfgg" aggregation="composite" association="_MRYAw3e7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRXZOXe7EeC4X4M9XQqfgg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRXZOne7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRXZO3e7EeC4X4M9XQqfgg" name="filesInfiniteFT" visibility="public" type="_MRYAf3e7EeC4X4M9XQqfgg" aggregation="composite" association="_MRYAx3e7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYAMHe7EeC4X4M9XQqfgg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYAMXe7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAMne7EeC4X4M9XQqfgg" name="filesComposite" visibility="public" type="_MRYAU3e7EeC4X4M9XQqfgg" aggregation="composite" association="_MRYAy3e7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYAM3e7EeC4X4M9XQqfgg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYANHe7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_MRYANXe7EeC4X4M9XQqfgg" name="importFile">
+          <ownedComment xmi:id="_MRYANne7EeC4X4M9XQqfgg" annotatedElement="_MRYANXe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            Imports an AP native file or directory to a CP file.&amp;nbsp; A directory may be imported to an existing composite CP
+            file.&lt;br />
+             The import mode can be:
+        &lt;/p>
+        &lt;p>
+            Overwrite :&lt;br />
+             An existing CP file is overwritten when the file is imported.
+        &lt;/p>
+        &lt;p>
+            Append :&lt;br />
+             Data is added to the end of an existing CP file when a file is imported.
+        &lt;/p>
+        &lt;p>
+            Clear :&lt;br />
+             An existing CP file is overwritten when a file is imported. If the destination is a composite CP file, all subfiles
+            belonging to this CP file are deleted before the source file is imported.
+        &lt;/p></body>
+          </ownedComment>
+          <ownedParameter xmi:id="_MRYAN3e7EeC4X4M9XQqfgg" name="source">
+            <ownedComment xmi:id="_MRYAOHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAN3e7EeC4X4M9XQqfgg">
+              <body>Source&amp;nbsp;file&amp;nbsp;or&amp;nbsp;folder.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MRYAOXe7EeC4X4M9XQqfgg" name="dstCpFile">
+            <ownedComment xmi:id="_MRYAOne7EeC4X4M9XQqfgg" annotatedElement="_MRYAOXe7EeC4X4M9XQqfgg">
+              <body>Destination CP&amp;nbsp;file.&lt;br /></body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MRYAO3e7EeC4X4M9XQqfgg" name="mode" type="_MRYA7Xe7EeC4X4M9XQqfgg">
+            <ownedComment xmi:id="_MRYAPHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAO3e7EeC4X4M9XQqfgg">
+              <body>How to import.&lt;br /></body>
+            </ownedComment>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MRYAPXe7EeC4X4M9XQqfgg" name="exportFile">
+          <ownedComment xmi:id="_MRYAPne7EeC4X4M9XQqfgg" annotatedElement="_MRYAPXe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            A CP file is exported to the Adjunct Processor (AP) native file system.&lt;br />
+        &lt;/p>
+        &lt;p>
+            Overwrite :&lt;br />
+             An existing file is overwritten when the CP file is exported.
+        &lt;/p>
+        &lt;p>
+            Append :&lt;br />
+             Data is added to the end of an existing file when the CP file is exported.
+        &lt;/p>
+        &lt;p>
+            Clear :&lt;br />
+             An existing file is overwritten when a CP file is exported. If the destination is a folder, all files belonging to
+            this folder are deleted before the source CP file is exported.
+        &lt;/p></body>
+          </ownedComment>
+          <ownedParameter xmi:id="_MRYAP3e7EeC4X4M9XQqfgg" name="srcCpFile">
+            <ownedComment xmi:id="_MRYAQHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAP3e7EeC4X4M9XQqfgg">
+              <body>Source&amp;nbsp;CP&amp;nbsp;file&amp;nbsp;to&amp;nbsp;export.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MRYAQXe7EeC4X4M9XQqfgg" name="dst">
+            <ownedComment xmi:id="_MRYAQne7EeC4X4M9XQqfgg" annotatedElement="_MRYAQXe7EeC4X4M9XQqfgg">
+              <body>Destination&amp;nbsp;file&amp;nbsp;or&amp;nbsp;folder&amp;nbsp;into&amp;nbsp;export&amp;nbsp;area.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MRYAQ3e7EeC4X4M9XQqfgg" name="mode" type="_MRYA7Xe7EeC4X4M9XQqfgg">
+            <ownedComment xmi:id="_MRYARHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAQ3e7EeC4X4M9XQqfgg">
+              <body>How&amp;nbsp;to export.</body>
+            </ownedComment>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MRYARXe7EeC4X4M9XQqfgg" name="copyTo">
+          <ownedComment xmi:id="_MRYARne7EeC4X4M9XQqfgg" annotatedElement="_MRYARXe7EeC4X4M9XQqfgg">
+            <body>Copies a CP file to another CP file. The destination file must already exist.&lt;br />
+         The copy mode can be: 
+        &lt;p>
+            Overwrite :&lt;br />
+             An existing CP file is overwritten when the CP file is copied.
+        &lt;/p>
+        &lt;p>
+            Append :&lt;br />
+             Data is added to the end of an existing CP file when the CP file is copied.
+        &lt;/p>
+        &lt;p>
+            Clear :&lt;br />
+             &amp;nbsp;An existing CP file is overwritten when a CP file is copied. If the destination CP file is a composite CP file,
+            all subfiles belonging to this CP file are deleted before the source CP file is copied.&lt;br />
+        &lt;/p></body>
+          </ownedComment>
+          <ownedParameter xmi:id="_MRYAR3e7EeC4X4M9XQqfgg" name="srcCpFile">
+            <ownedComment xmi:id="_MRYASHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAR3e7EeC4X4M9XQqfgg">
+              <body>Source&amp;nbsp;CP file.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MRYASXe7EeC4X4M9XQqfgg" name="dstCpFile">
+            <ownedComment xmi:id="_MRYASne7EeC4X4M9XQqfgg" annotatedElement="_MRYASXe7EeC4X4M9XQqfgg">
+              <body>Destination&amp;nbsp;CP file.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MRYAS3e7EeC4X4M9XQqfgg" name="mode" type="_MRYA7Xe7EeC4X4M9XQqfgg">
+            <ownedComment xmi:id="_MRYATHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAS3e7EeC4X4M9XQqfgg">
+              <body>How&amp;nbsp;to&amp;nbsp;copy.</body>
+            </ownedComment>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MRYATXe7EeC4X4M9XQqfgg" name="moveTo">
+          <ownedComment xmi:id="_MRYATne7EeC4X4M9XQqfgg" annotatedElement="_MRYATXe7EeC4X4M9XQqfgg">
+            <body>Moves a CP file to another CP volume. If a composite file is moved all the subfiles of that file are also moved.&lt;br />
+         The volume to which the file is moved must already exist.&lt;br /></body>
+          </ownedComment>
+          <ownedParameter xmi:id="_MRYAT3e7EeC4X4M9XQqfgg" name="srcCpFile">
+            <ownedComment xmi:id="_MRYAUHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAT3e7EeC4X4M9XQqfgg">
+              <body>CP&amp;nbsp;file&amp;nbsp;to&amp;nbsp;move.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MRYAUXe7EeC4X4M9XQqfgg" name="volume">
+            <ownedComment xmi:id="_MRYAUne7EeC4X4M9XQqfgg" annotatedElement="_MRYAUXe7EeC4X4M9XQqfgg">
+              <body>Destination&amp;nbsp;volume.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MRYAU3e7EeC4X4M9XQqfgg" name="CompositeFile">
+        <ownedComment xmi:id="_MRYAVHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAU3e7EeC4X4M9XQqfgg">
+          <body>Instance of this class represents a CP regular composite file.&lt;br />
+         It consists of a template for the creation of subfile and one or several subfiles.&lt;br />
+         &lt;br /></body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_MRYAVXe7EeC4X4M9XQqfgg" name="compositeFileId" visibility="public" isReadOnly="true">
+          <ownedComment xmi:id="_MRYAVne7EeC4X4M9XQqfgg" annotatedElement="_MRYAVXe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;value&amp;nbsp;component&amp;nbsp;of&amp;nbsp;the&amp;nbsp;RDN.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAXHe7EeC4X4M9XQqfgg" name="fileName">
+          <ownedComment xmi:id="_MRYAXXe7EeC4X4M9XQqfgg" annotatedElement="_MRYAXHe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;name&amp;nbsp;of&amp;nbsp;the composite CP file.&lt;br />
+             A valid name is an alphanumeric string with a maximum length of twelve characters. The name must start with an
+            alphabetic character.&lt;br />
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAXne7EeC4X4M9XQqfgg" name="recordLength">
+          <ownedComment xmi:id="_MRYAX3e7EeC4X4M9XQqfgg" annotatedElement="_MRYAXne7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The length, in byte, of the data records.&lt;br />
+             A record contains data elements that are treated as a single unit.&lt;br />
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAYHe7EeC4X4M9XQqfgg" name="subFiles" visibility="public" type="_MRYAz3e7EeC4X4M9XQqfgg" aggregation="composite" association="_MRYA6Xe7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYAYXe7EeC4X4M9XQqfgg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYAYne7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mrqw4He_EeC4X4M9XQqfgg" name="compression">
+          <eAnnotations xmi:id="_mrqw4Xe_EeC4X4M9XQqfgg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <ownedComment xmi:id="_mrqw4ne_EeC4X4M9XQqfgg" annotatedElement="_mrqw4He_EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            Enables/disables the CP file compression on disk. All subfiles are compressed/uncompressed.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_1guPACCSEd-Egr3-YAWs7Q?EcimDataType/EcimBoolean?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mrqw43e_EeC4X4M9XQqfgg"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_mrqw5He_EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MRYAY3e7EeC4X4M9XQqfgg" name="SimpleFile">
+        <ownedComment xmi:id="_MRYAZHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAY3e7EeC4X4M9XQqfgg">
+          <body>Instance&amp;nbsp;of&amp;nbsp;this&amp;nbsp;class&amp;nbsp;represents&amp;nbsp;a simple CP file.&lt;br />
+         It consists of&amp;nbsp;a&amp;nbsp;regular&amp;nbsp;data&amp;nbsp;in&amp;nbsp;one&amp;nbsp;data&amp;nbsp;file.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_MRYAZXe7EeC4X4M9XQqfgg" name="simpleFileId" visibility="public" isReadOnly="true">
+          <ownedComment xmi:id="_MRYAZne7EeC4X4M9XQqfgg" annotatedElement="_MRYAZXe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;value&amp;nbsp;component&amp;nbsp;of&amp;nbsp;the&amp;nbsp;RDN.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAZ3e7EeC4X4M9XQqfgg" name="compression">
+          <eAnnotations xmi:id="_MRYAaHe7EeC4X4M9XQqfgg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <ownedComment xmi:id="_MRYAaXe7EeC4X4M9XQqfgg" annotatedElement="_MRYAZ3e7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            Enables/disables&amp;nbsp;the simple CP file&amp;nbsp;compression/uncompression&amp;nbsp;on&amp;nbsp;disk.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_1guPACCSEd-Egr3-YAWs7Q?EcimDataType/EcimBoolean?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYAane7EeC4X4M9XQqfgg"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_MRYAa3e7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAbHe7EeC4X4M9XQqfgg" name="fileName">
+          <ownedComment xmi:id="_MRYAbXe7EeC4X4M9XQqfgg" annotatedElement="_MRYAbHe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;name&amp;nbsp;of&amp;nbsp;the simple CP file.&lt;br />
+             A valid name is an alphanumeric string with a maximum length of twelve characters. The name must start with an
+            alphabetic character.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAbne7EeC4X4M9XQqfgg" name="recordLength">
+          <ownedComment xmi:id="_MRYAb3e7EeC4X4M9XQqfgg" annotatedElement="_MRYAbne7EeC4X4M9XQqfgg">
+            <body>The length, in byte, of the data records.&lt;br />
+         A record contains data elements that are treated as a single unit.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAcHe7EeC4X4M9XQqfgg" name="size" isReadOnly="true">
+          <ownedComment xmi:id="_MRYAcXe7EeC4X4M9XQqfgg" annotatedElement="_MRYAcHe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            Indicates the size of the subfile, expressed in records.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxWcACCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt16?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYAcne7EeC4X4M9XQqfgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYAc3e7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_clm58IFOEeCHXpdXyfqLmA" name="numOfReaders" isReadOnly="true">
+          <ownedComment xmi:id="_cl7DAIFOEeCHXpdXyfqLmA" annotatedElement="_clm58IFOEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            The number of current users with read access on the subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxXDECCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt8?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cl504oFOEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_lWdrkIFOEeCHXpdXyfqLmA" name="numOfWriters" isReadOnly="true">
+          <ownedComment xmi:id="_lWjyMoFOEeCHXpdXyfqLmA" annotatedElement="_lWdrkIFOEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            The&amp;nbsp;number&amp;nbsp;of&amp;nbsp;current&amp;nbsp;users&amp;nbsp;with&amp;nbsp;write&amp;nbsp;access&amp;nbsp;on&amp;nbsp;the&amp;nbsp;subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxXDECCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt8?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lWjyMYFOEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7fy6MIFOEeCHXpdXyfqLmA" name="exclusiveAccess" isReadOnly="true">
+          <ownedComment xmi:id="_7f5n4IFOEeCHXpdXyfqLmA" annotatedElement="_7fy6MIFOEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            Indicates&amp;nbsp;an&amp;nbsp;exclusive&amp;nbsp;read&amp;nbsp;or&amp;nbsp;write&amp;nbsp;access&amp;nbsp;on&amp;nbsp;the CP subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_1guPACCSEd-Egr3-YAWs7Q?EcimDataType/EcimBoolean?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7f5A0YFOEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MRYAf3e7EeC4X4M9XQqfgg" name="InfiniteFile">
+        <ownedComment xmi:id="_MRYAgHe7EeC4X4M9XQqfgg" annotatedElement="_MRYAf3e7EeC4X4M9XQqfgg">
+          <body>&lt;p>
+            Instance&amp;nbsp;of&amp;nbsp;this&amp;nbsp;class&amp;nbsp;represents&amp;nbsp;a infinite composite CP file.&lt;br />
+             It
+            is&amp;nbsp;a&amp;nbsp;composite&amp;nbsp;file&amp;nbsp;where&amp;nbsp;the&amp;nbsp;subfiles&amp;nbsp;are&amp;nbsp;created&amp;nbsp;automatically&amp;nbsp;by&amp;nbsp;CP&amp;nbsp;applications.
+            For this type of CP file is possible associate a transfer policy.&lt;br />
+        &lt;/p></body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_iGUaMIEyEeC7Cdpr7mDcCg" name="transferBlockPolicy">
+          <ownedComment xmi:id="_qS9rgIEyEeC7Cdpr7mDcCg" annotatedElement="_iGUaMIEyEeC7Cdpr7mDcCg">
+            <body>Reference of the defined block transfer policy for the CP infinite file.&lt;br /></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iGbu8IEyEeC7Cdpr7mDcCg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_13Um4IEvEeC7Cdpr7mDcCg" name="compression">
+          <eAnnotations xmi:id="_13Um4YEvEeC7Cdpr7mDcCg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <ownedComment xmi:id="_13Um4oEvEeC7Cdpr7mDcCg" annotatedElement="_13Um4IEvEeC7Cdpr7mDcCg">
+            <body>&lt;p>
+            Enables/disables the CP file compression on disk. All subfiles are compressed/uncompressed.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_1guPACCSEd-Egr3-YAWs7Q?EcimDataType/EcimBoolean?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13Um44EvEeC7Cdpr7mDcCg"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_13Um5IEvEeC7Cdpr7mDcCg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NNfRgIEvEeC7Cdpr7mDcCg" name="fileName">
+          <ownedComment xmi:id="_NNfRgYEvEeC7Cdpr7mDcCg" annotatedElement="_NNfRgIEvEeC7Cdpr7mDcCg">
+            <body>The&amp;nbsp;name&amp;nbsp;of&amp;nbsp;the infinite CP&amp;nbsp;file.&lt;br />
+         A valid name is an alphanumeric string with a maximum length of twelve characters. The name must start with an alphabetic
+        character.&lt;br /></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HD2SkIFXEeCHXpdXyfqLmA" name="lastSubfileSent" isReadOnly="true">
+          <ownedComment xmi:id="_HD9AQYFXEeCHXpdXyfqLmA" annotatedElement="_HD2SkIFXEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            The&amp;nbsp;last&amp;nbsp;subfile&amp;nbsp;transferred.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HD9AQIFXEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZZRR4IEvEeC7Cdpr7mDcCg" name="maxSize">
+          <ownedComment xmi:id="_ZZRR4YEvEeC7Cdpr7mDcCg" annotatedElement="_ZZRR4IEvEeC7Cdpr7mDcCg">
+            <body>&lt;p>
+            The maximum number of records that can be written between each change of active subfile of the infinite CP file.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZZRR4oEvEeC7Cdpr7mDcCg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZZR48IEvEeC7Cdpr7mDcCg" name="maxTime">
+          <ownedComment xmi:id="_ZZR48YEvEeC7Cdpr7mDcCg" annotatedElement="_ZZR48IEvEeC7Cdpr7mDcCg">
+            <body>&lt;p>
+            The&amp;nbsp;maximum&amp;nbsp;length&amp;nbsp;of&amp;nbsp;time&amp;nbsp;between&amp;nbsp;each&amp;nbsp;change&amp;nbsp;of&amp;nbsp;active subfile of the
+            infinite CP file..
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZZR48oEvEeC7Cdpr7mDcCg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Pzd1QIEvEeC7Cdpr7mDcCg" name="recordLength">
+          <ownedComment xmi:id="_Pzd1QYEvEeC7Cdpr7mDcCg" annotatedElement="_Pzd1QIEvEeC7Cdpr7mDcCg">
+            <body>&lt;p>
+            The length, in byte, of the data records.&lt;br />
+             A record contains data elements that are treated as a single unit.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxWcACCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt16?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_dHYiYIEvEeC7Cdpr7mDcCg" name="overrideSubfileClosure">
+          <ownedComment xmi:id="_dHYiYYEvEeC7Cdpr7mDcCg" annotatedElement="_dHYiYIEvEeC7Cdpr7mDcCg">
+            <body>When the release condition is enabled the active subfile will not be changed during writing operation.&lt;br />
+         The active subfile will be changed when the subfile is closed and at least one of the options, maximum time or maximum
+        size, is fulfilled.&lt;br />
+         If none of maximum time or maximum size are specified the active subfile will be changed when the subfile is closed.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_1guPACCSEd-Egr3-YAWs7Q?EcimDataType/EcimBoolean?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dHYiYoEvEeC7Cdpr7mDcCg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dHYiY4EvEeC7Cdpr7mDcCg"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_dHYiZIEvEeC7Cdpr7mDcCg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__ITYUIFWEeCHXpdXyfqLmA" name="activeSubFile" isReadOnly="true">
+          <ownedComment xmi:id="__IaGAoFWEeCHXpdXyfqLmA" annotatedElement="__ITYUIFWEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            The number of current&amp;nbsp;active&amp;nbsp;subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__IaGAYFWEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYAgXe7EeC4X4M9XQqfgg" name="infiniteFileId" visibility="public" isReadOnly="true">
+          <ownedComment xmi:id="_MRYAgne7EeC4X4M9XQqfgg" annotatedElement="_MRYAgXe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;value&amp;nbsp;component&amp;nbsp;of&amp;nbsp;the&amp;nbsp;RDN.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-n4-YX0uEeChc7QVgHP1-Q" name="subFiles" visibility="public" type="_mQ4zwH0tEeChc7QVgHP1-Q" aggregation="composite" association="_-n4-YH0uEeChc7QVgHP1-Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-n5lcX0uEeChc7QVgHP1-Q" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-n5lcH0uEeChc7QVgHP1-Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tp9ucIEwEeC7Cdpr7mDcCg" name="transferFilePolicy">
+          <ownedComment xmi:id="_BU_uoIExEeC7Cdpr7mDcCg" annotatedElement="_tp9ucIEwEeC7Cdpr7mDcCg">
+            <body>Reference of the defined file transfer policy for the infinite CP file.&lt;br /></body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="platform:/resource/ECIM_Fragments/ECIM_FileM_1.0.emx#_HzxDcOMxEd-kQ-bA_LUmHA?ECIM_FileM/ECIM_FileM/FileGroup?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tqEcIYEwEeC7Cdpr7mDcCg"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_H_d4AIEwEeC7Cdpr7mDcCg" name="releaseSubFile">
+          <ownedComment xmi:id="_H_d4AYEwEeC7Cdpr7mDcCg" annotatedElement="_H_d4AIEwEeC7Cdpr7mDcCg">
+            <body>Changes the active subfile. Closes the active and opens a new subfile. &lt;br /></body>
+          </ownedComment>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MRYAv3e7EeC4X4M9XQqfgg" name="volumeAssociation" memberEnd="_MRXZKHe7EeC4X4M9XQqfgg _MRYAwHe7EeC4X4M9XQqfgg">
+        <ownedEnd xmi:id="_MRYAwHe7EeC4X4M9XQqfgg" name="volumes" visibility="public" type="_MRXZI3e7EeC4X4M9XQqfgg" association="_MRYAv3e7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYAwXe7EeC4X4M9XQqfgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYAwne7EeC4X4M9XQqfgg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MRYAw3e7EeC4X4M9XQqfgg" name="cpVolume_to_fileSimple" memberEnd="_MRXZOHe7EeC4X4M9XQqfgg _MRYAxHe7EeC4X4M9XQqfgg">
+        <ownedEnd xmi:id="_MRYAxHe7EeC4X4M9XQqfgg" name="cpVolume" visibility="public" type="_MRXZLXe7EeC4X4M9XQqfgg" association="_MRYAw3e7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYAxXe7EeC4X4M9XQqfgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYAxne7EeC4X4M9XQqfgg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MRYAx3e7EeC4X4M9XQqfgg" name="cpVolume_to_fileInfinite" memberEnd="_MRXZO3e7EeC4X4M9XQqfgg _MRYAyHe7EeC4X4M9XQqfgg">
+        <ownedEnd xmi:id="_MRYAyHe7EeC4X4M9XQqfgg" name="cpVolume" visibility="public" type="_MRXZLXe7EeC4X4M9XQqfgg" association="_MRYAx3e7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYAyXe7EeC4X4M9XQqfgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYAyne7EeC4X4M9XQqfgg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MRYAy3e7EeC4X4M9XQqfgg" name="cpVolume_to_fileComposite" memberEnd="_MRYAMne7EeC4X4M9XQqfgg _MRYAzHe7EeC4X4M9XQqfgg">
+        <ownedEnd xmi:id="_MRYAzHe7EeC4X4M9XQqfgg" name="cpVolume" visibility="public" type="_MRXZLXe7EeC4X4M9XQqfgg" association="_MRYAy3e7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYAzXe7EeC4X4M9XQqfgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYAzne7EeC4X4M9XQqfgg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MRYAz3e7EeC4X4M9XQqfgg" name="CompositeSubFile">
+        <ownedComment xmi:id="_MRYA0He7EeC4X4M9XQqfgg" annotatedElement="_MRYAz3e7EeC4X4M9XQqfgg">
+          <body>&lt;p>
+            Instance of this class represents a subfile of a regular composite CP file.
+        &lt;/p></body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_MRYA0Xe7EeC4X4M9XQqfgg" name="compositeSubFileId" visibility="public" isReadOnly="true">
+          <ownedComment xmi:id="_MRYA0ne7EeC4X4M9XQqfgg" annotatedElement="_MRYA0Xe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The value component of the RDN.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYA03e7EeC4X4M9XQqfgg" name="name" visibility="public">
+          <ownedComment xmi:id="_MRYA1He7EeC4X4M9XQqfgg" annotatedElement="_MRYA03e7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            The&amp;nbsp;name&amp;nbsp;of&amp;nbsp;the&amp;nbsp;CP subfile.&lt;br />
+             A valid name is an alphanumeric string with a maximum length of twelve characters. The name must start with an
+            alphabetic character.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYA1Xe7EeC4X4M9XQqfgg" name="size" isReadOnly="true">
+          <ownedComment xmi:id="_MRYA1ne7EeC4X4M9XQqfgg" annotatedElement="_MRYA1Xe7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            Indicates&amp;nbsp;the&amp;nbsp;size&amp;nbsp;of&amp;nbsp;the subfile,&amp;nbsp;expressed&amp;nbsp;in&amp;nbsp;records.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYA13e7EeC4X4M9XQqfgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYA2He7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MRYA5He7EeC4X4M9XQqfgg" name="compression">
+          <eAnnotations xmi:id="_MRYA5Xe7EeC4X4M9XQqfgg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <ownedComment xmi:id="_MRYA5ne7EeC4X4M9XQqfgg" annotatedElement="_MRYA5He7EeC4X4M9XQqfgg">
+            <body>&lt;p>
+            Enables/disables&amp;nbsp;the&amp;nbsp;CP&amp;nbsp;subfile&amp;nbsp;compression/uncompression&amp;nbsp;on&amp;nbsp;disk.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_1guPACCSEd-Egr3-YAWs7Q?EcimDataType/EcimBoolean?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYA53e7EeC4X4M9XQqfgg"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_MRYA6He7EeC4X4M9XQqfgg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Dvm0QIFPEeCHXpdXyfqLmA" name="numOfReaders" isReadOnly="true">
+          <ownedComment xmi:id="_DvnbUIFPEeCHXpdXyfqLmA" annotatedElement="_Dvm0QIFPEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            The&amp;nbsp;number&amp;nbsp;of current users&amp;nbsp;with&amp;nbsp;read&amp;nbsp;access&amp;nbsp;on&amp;nbsp;the subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxXDECCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt8?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DvnbUYFPEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DvoCYIFPEeCHXpdXyfqLmA" name="numOfWriters" isReadOnly="true">
+          <ownedComment xmi:id="_DvoCYYFPEeCHXpdXyfqLmA" annotatedElement="_DvoCYIFPEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            The&amp;nbsp;number&amp;nbsp;of current users&amp;nbsp;with&amp;nbsp;write&amp;nbsp;access&amp;nbsp;on&amp;nbsp;the subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxXDECCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt8?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DvoCYoFPEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DvoCY4FPEeCHXpdXyfqLmA" name="exclusiveAccess" isReadOnly="true">
+          <ownedComment xmi:id="_DvoCZIFPEeCHXpdXyfqLmA" annotatedElement="_DvoCY4FPEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            Indicates&amp;nbsp;an&amp;nbsp;exclusive&amp;nbsp;read&amp;nbsp;or&amp;nbsp;write&amp;nbsp;access&amp;nbsp;on&amp;nbsp;the CP subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_1guPACCSEd-Egr3-YAWs7Q?EcimDataType/EcimBoolean?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DvoCZYFPEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MRYA6Xe7EeC4X4M9XQqfgg" name="composite_to_subfile" memberEnd="_MRYAYHe7EeC4X4M9XQqfgg _MRYA6ne7EeC4X4M9XQqfgg">
+        <ownedEnd xmi:id="_MRYA6ne7EeC4X4M9XQqfgg" name="compositeFile" type="_MRYAU3e7EeC4X4M9XQqfgg" association="_MRYA6Xe7EeC4X4M9XQqfgg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MRYA63e7EeC4X4M9XQqfgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MRYA7He7EeC4X4M9XQqfgg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MRYA7Xe7EeC4X4M9XQqfgg" name="copyMode">
+        <ownedComment xmi:id="_MRYA7ne7EeC4X4M9XQqfgg">
+          <body>Specifies how files are copied.</body>
+        </ownedComment>
+        <ownedRule xmi:id="_MRYA73e7EeC4X4M9XQqfgg" name="MetaModelAgent" constrainedElement="_MRYA7Xe7EeC4X4M9XQqfgg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_MRYA8He7EeC4X4M9XQqfgg">
+            <body>Suppress: Validation</body>
+          </specification>
+        </ownedRule>
+        <ownedLiteral xmi:id="_MRYA8Xe7EeC4X4M9XQqfgg" name="OVERWRITE" classifier="_MRYA7Xe7EeC4X4M9XQqfgg">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_MRYA8ne7EeC4X4M9XQqfgg"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_MRYA83e7EeC4X4M9XQqfgg" name="APPEND" classifier="_MRYA7Xe7EeC4X4M9XQqfgg">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_MRYA9He7EeC4X4M9XQqfgg" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_MRYA9Xe7EeC4X4M9XQqfgg" name="CLEAR" classifier="_MRYA7Xe7EeC4X4M9XQqfgg">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_x-p7EH0wEeChc7QVgHP1-Q" value="2"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mQ4zwH0tEeChc7QVgHP1-Q" name="InfiniteSubFile">
+        <ownedComment xmi:id="_mRAIgX0tEeChc7QVgHP1-Q" annotatedElement="_mQ4zwH0tEeChc7QVgHP1-Q">
+          <body>&lt;p>
+            Instance&amp;nbsp;of&amp;nbsp;this&amp;nbsp;class&amp;nbsp;represents&amp;nbsp;a&amp;nbsp;subfile&amp;nbsp;of&amp;nbsp;a infinite CP file.&lt;br />
+             These instances are System created/modified/deleted. They reflect the state of the infinite CP file to which they
+            belong.&lt;br />
+        &lt;/p></body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_mSNpcH0tEeChc7QVgHP1-Q" name="infiniteSubFileId" isReadOnly="true">
+          <ownedComment xmi:id="_mSTJAX0tEeChc7QVgHP1-Q" annotatedElement="_mSNpcH0tEeChc7QVgHP1-Q">
+            <body>&lt;p>
+            The value component of the RDN.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3D0lcH0tEeChc7QVgHP1-Q" name="name" isReadOnly="true">
+          <ownedComment xmi:id="_3D424n0tEeChc7QVgHP1-Q" annotatedElement="_3D0lcH0tEeChc7QVgHP1-Q">
+            <body>The name of the subfile&amp;nbsp;of&amp;nbsp;infinite CP file.&lt;br />
+         The subfile names are ten digits starting with 0000000001.&lt;br /></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3D424X0tEeChc7QVgHP1-Q" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3D424H0tEeChc7QVgHP1-Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_IlwLIH0uEeChc7QVgHP1-Q" name="size" isReadOnly="true">
+          <ownedComment xmi:id="_Il240H0uEeChc7QVgHP1-Q" annotatedElement="_IlwLIH0uEeChc7QVgHP1-Q">
+            <body>&lt;p>
+            Indicates the current size of the subfile, expressed in records.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxVN4CCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt32?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Il2RwX0uEeChc7QVgHP1-Q" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Il2RwH0uEeChc7QVgHP1-Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_AOSpoIFPEeCHXpdXyfqLmA" name="numOfReaders" isReadOnly="true">
+          <ownedComment xmi:id="_AOSpoYFPEeCHXpdXyfqLmA" annotatedElement="_AOSpoIFPEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            The number of current users with read access on the subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxXDECCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt8?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOSpooFPEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_AOTQsIFPEeCHXpdXyfqLmA" name="numOfWriters" isReadOnly="true">
+          <ownedComment xmi:id="_AOTQsYFPEeCHXpdXyfqLmA" annotatedElement="_AOTQsIFPEeCHXpdXyfqLmA">
+            <body>The number of current users with write access on the subfile. &lt;br /></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_DxXDECCTEd-Egr3-YAWs7Q?EcimDataType/EcimUInt8?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOTQsoFPEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_AOTQs4FPEeCHXpdXyfqLmA" name="exclusiveAccess" isReadOnly="true">
+          <ownedComment xmi:id="_AOTQtIFPEeCHXpdXyfqLmA" annotatedElement="_AOTQs4FPEeCHXpdXyfqLmA">
+            <body>&lt;p>
+            Indicates&amp;nbsp;an&amp;nbsp;exclusive&amp;nbsp;read&amp;nbsp;or&amp;nbsp;write&amp;nbsp;access&amp;nbsp;on&amp;nbsp;the CP subfile.
+        &lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_1guPACCSEd-Egr3-YAWs7Q?EcimDataType/EcimBoolean?"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOTQtYFPEeCHXpdXyfqLmA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-n4-YH0uEeChc7QVgHP1-Q" name="infiniteFile_to_subfiles" memberEnd="_-n4-YX0uEeChc7QVgHP1-Q _-n5lcn0uEeChc7QVgHP1-Q">
+        <ownedEnd xmi:id="_-n5lcn0uEeChc7QVgHP1-Q" name="infiniteFile" visibility="public" type="_MRYAf3e7EeC4X4M9XQqfgg" association="_-n4-YH0uEeChc7QVgHP1-Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-n6MgX0uEeChc7QVgHP1-Q" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-n6MgH0uEeChc7QVgHP1-Q" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_HT1MIIFTEeCHXpdXyfqLmA" name="" memberEnd="_HT1zMIFTEeCHXpdXyfqLmA _HT3BUIFTEeCHXpdXyfqLmA">
+        <ownedEnd xmi:id="_HT3BUIFTEeCHXpdXyfqLmA" name="cpfilesystem" type="_MRXZI3e7EeC4X4M9XQqfgg" aggregation="composite" association="_HT1MIIFTEeCHXpdXyfqLmA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HT3BUoFTEeCHXpdXyfqLmA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HT3BUYFTEeCHXpdXyfqLmA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_rq5ygIwtEeCHGPEHyBmkSA" name="Instances">
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_1g1V0IwtEeCHGPEHyBmkSA" name="CPFileSystem" classifier="_MRXZI3e7EeC4X4M9XQqfgg">
+          <slot xmi:id="_1g5nQYwtEeCHGPEHyBmkSA" definingFeature="_MRXZJne7EeC4X4M9XQqfgg">
+            <value xmi:type="uml:LiteralString" xmi:id="_1g6OUIwtEeCHGPEHyBmkSA" value="1">
+              <type xmi:type="uml:DataType" href="pathmap://ECIM_DATA_TYPES/EcimDataTypes.emx#_7LZ54CCSEd-Egr3-YAWs7Q?EcimDataType/EcimString?"/>
+            </value>
+          </slot>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_UeIAINCzEdqK7KjEh4hvHw">
+      <eAnnotations xmi:id="_UeIAIdCzEdqK7KjEh4hvHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_UeIAItCzEdqK7KjEh4hvHw">
+      <eAnnotations xmi:id="_UeIAI9CzEdqK7KjEh4hvHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_UeIAJNCzEdqK7KjEh4hvHw">
+      <eAnnotations xmi:id="_UeIAJdCzEdqK7KjEh4hvHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_0tSnQIW5Ed-FBpQGdJXi3g">
+      <eAnnotations xmi:id="_0tT1YIW5Ed-FBpQGdJXi3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ECIM_BASE_PROFILE/ECIM_Base_Profile.epx#_z6OOMAazEeCKpN5V4a4GyA?ECIM%20Base%20Profile/ECIMBaseProfile?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ECIM_BASE_PROFILE/ECIM_Base_Profile.epx#_cUcakNQkEd63X4o72aQidQ?ECIM%20Base%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Iic3YHe7EeC4X4M9XQqfgg">
+      <eAnnotations xmi:id="_IighwHe7EeC4X4M9XQqfgg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://COREMW_PROFILE/CoreMW_Profile.epx#_J3KmYfFaEd-Ts8jlz8Preg?CoreMW%20Profile/CoreMWProfile?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://COREMW_PROFILE/CoreMW_Profile.epx#_Br2_QBSXEd-ZjqYFUyJzOw?CoreMW%20Profile?"/>
+    </profileApplication>
+  </uml:Model>
+  <ECIMBaseProfile:EcimModel xmi:id="_0tUccIW5Ed-FBpQGdJXi3g" base_Model="_NRAMoAwOEdmFcaeZXPdWAQ" createdBy="QVINCON"/>
+  <ECIMBaseProfile:EcimMom xmi:id="_MRhKIHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Package="_MRXZIHe7EeC4X4M9XQqfgg" author="QVINCON" contact="" date="2001-05-30" docNo="" revision="" version="1" release="0" organization="Ericsson"/>
+  <Default:Documentation xmi:id="_MRhKIXe7EeC4X4M9XQqfgg" base_Comment="_MRXZIne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimRootMoClass_RW xmi:id="_MRhKIne7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Class="_MRXZI3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRhKI3e7EeC4X4M9XQqfgg" base_Comment="_MRXZJXe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimKeyAttribute xmi:id="_MRhKJHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRXZJne7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRhxMHe7EeC4X4M9XQqfgg" base_Comment="_MRXZJ3e7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRhxMne7EeC4X4M9XQqfgg" base_Property="_MRXZK3e7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRhxM3e7EeC4X4M9XQqfgg" base_Comment="_MRXZLHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimMoClass_RW xmi:id="_MRhxNHe7EeC4X4M9XQqfgg" base_Class="_MRXZLXe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRhxNXe7EeC4X4M9XQqfgg" base_Comment="_MRXZLne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimKeyAttribute xmi:id="_MRhxNne7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRXZL3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRhxN3e7EeC4X4M9XQqfgg" base_Comment="_MRXZMHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_MRW xmi:id="_MRhxOHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRXZMXe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRhxOXe7EeC4X4M9XQqfgg" base_Property="_MRXZMXe7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRhxOne7EeC4X4M9XQqfgg" base_Comment="_MRXZMne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_MRhxO3e7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRXZM3e7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRhxPHe7EeC4X4M9XQqfgg" base_Property="_MRXZM3e7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRiYQHe7EeC4X4M9XQqfgg" base_Comment="_MRXZNHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAction xmi:id="_MRiYQXe7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Operation="_MRYANXe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAction xmi:id="_MRiYQne7EeC4X4M9XQqfgg" base_Operation="_MRYANXe7EeC4X4M9XQqfgg" admOpId="1"/>
+  <Default:Documentation xmi:id="_MRiYQ3e7EeC4X4M9XQqfgg" base_Comment="_MRYANne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRiYRHe7EeC4X4M9XQqfgg" base_Parameter="_MRYAN3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRiYRXe7EeC4X4M9XQqfgg" base_Comment="_MRYAOHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRiYRne7EeC4X4M9XQqfgg" base_Parameter="_MRYAOXe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRiYR3e7EeC4X4M9XQqfgg" base_Comment="_MRYAOne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRiYSHe7EeC4X4M9XQqfgg" base_Parameter="_MRYAO3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRi_UHe7EeC4X4M9XQqfgg" base_Comment="_MRYAPHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAction xmi:id="_MRi_UXe7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Operation="_MRYAPXe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAction xmi:id="_MRi_Une7EeC4X4M9XQqfgg" base_Operation="_MRYAPXe7EeC4X4M9XQqfgg" admOpId="2"/>
+  <Default:Documentation xmi:id="_MRi_U3e7EeC4X4M9XQqfgg" base_Comment="_MRYAPne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRi_VHe7EeC4X4M9XQqfgg" base_Parameter="_MRYAP3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRi_VXe7EeC4X4M9XQqfgg" base_Comment="_MRYAQHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRi_Vne7EeC4X4M9XQqfgg" base_Parameter="_MRYAQXe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRi_V3e7EeC4X4M9XQqfgg" base_Comment="_MRYAQne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRi_WHe7EeC4X4M9XQqfgg" base_Parameter="_MRYAQ3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRi_WXe7EeC4X4M9XQqfgg" base_Comment="_MRYARHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAction xmi:id="_MRi_Wne7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Operation="_MRYARXe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAction xmi:id="_MRi_W3e7EeC4X4M9XQqfgg" base_Operation="_MRYARXe7EeC4X4M9XQqfgg" admOpId="3"/>
+  <Default:Documentation xmi:id="_MRi_XHe7EeC4X4M9XQqfgg" base_Comment="_MRYARne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRjmYHe7EeC4X4M9XQqfgg" base_Parameter="_MRYAR3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRjmYXe7EeC4X4M9XQqfgg" base_Comment="_MRYASHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRjmYne7EeC4X4M9XQqfgg" base_Parameter="_MRYASXe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRjmY3e7EeC4X4M9XQqfgg" base_Comment="_MRYASne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRjmZHe7EeC4X4M9XQqfgg" base_Parameter="_MRYAS3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRjmZXe7EeC4X4M9XQqfgg" base_Comment="_MRYATHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAction xmi:id="_MRjmZne7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Operation="_MRYATXe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAction xmi:id="_MRjmZ3e7EeC4X4M9XQqfgg" base_Operation="_MRYATXe7EeC4X4M9XQqfgg" admOpId="4"/>
+  <Default:Documentation xmi:id="_MRjmaHe7EeC4X4M9XQqfgg" base_Comment="_MRYATne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRjmaXe7EeC4X4M9XQqfgg" base_Parameter="_MRYAT3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRjmane7EeC4X4M9XQqfgg" base_Comment="_MRYAUHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimParameter xmi:id="_MRjma3e7EeC4X4M9XQqfgg" base_Parameter="_MRYAUXe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRjmbHe7EeC4X4M9XQqfgg" base_Comment="_MRYAUne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimMoClass_RW xmi:id="_MRkNcHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Class="_MRYAU3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRkNcXe7EeC4X4M9XQqfgg" base_Comment="_MRYAVHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimKeyAttribute xmi:id="_MRkNcne7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAVXe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRkNc3e7EeC4X4M9XQqfgg" base_Comment="_MRYAVne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_MRW xmi:id="_MRkNd3e7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAXHe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRkNeHe7EeC4X4M9XQqfgg" base_Property="_MRYAXHe7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRkNeXe7EeC4X4M9XQqfgg" base_Comment="_MRYAXXe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_MRW xmi:id="_MRkNene7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAXne7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRkNe3e7EeC4X4M9XQqfgg" base_Property="_MRYAXne7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRkNfHe7EeC4X4M9XQqfgg" base_Comment="_MRYAX3e7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimMoClass_RW xmi:id="_MRk0gHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Class="_MRYAY3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRk0gXe7EeC4X4M9XQqfgg" base_Comment="_MRYAZHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimKeyAttribute xmi:id="_MRk0gne7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAZXe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRk0g3e7EeC4X4M9XQqfgg" base_Comment="_MRYAZne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_MRk0hHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAZ3e7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRk0hXe7EeC4X4M9XQqfgg" base_Property="_MRYAZ3e7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRk0hne7EeC4X4M9XQqfgg" base_Comment="_MRYAaXe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_MRW xmi:id="_MRk0h3e7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAbHe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRk0iHe7EeC4X4M9XQqfgg" base_Property="_MRYAbHe7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRk0iXe7EeC4X4M9XQqfgg" base_Comment="_MRYAbXe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_MRW xmi:id="_MRk0ine7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAbne7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRk0i3e7EeC4X4M9XQqfgg" base_Property="_MRYAbne7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRlbkHe7EeC4X4M9XQqfgg" base_Comment="_MRYAb3e7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_MRlbkXe7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAcHe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRlbkne7EeC4X4M9XQqfgg" base_Property="_MRYAcHe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRlbk3e7EeC4X4M9XQqfgg" base_Comment="_MRYAcXe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimMoClass_RW xmi:id="_MRmCoHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Class="_MRYAf3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRmCoXe7EeC4X4M9XQqfgg" base_Comment="_MRYAgHe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimKeyAttribute xmi:id="_MRmCone7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYAgXe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRmCo3e7EeC4X4M9XQqfgg" base_Comment="_MRYAgne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimContainment xmi:id="_MRoe4He7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Association="_MRYAv3e7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimContainment xmi:id="_MRoe4Xe7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Association="_MRYAw3e7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimContainment xmi:id="_MRoe4ne7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Association="_MRYAx3e7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimContainment xmi:id="_MRoe43e7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Association="_MRYAy3e7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimMoClass_RW xmi:id="_MRoe5He7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Class="_MRYAz3e7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRoe5Xe7EeC4X4M9XQqfgg" base_Comment="_MRYA0He7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimKeyAttribute xmi:id="_MRoe5ne7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYA0Xe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRoe53e7EeC4X4M9XQqfgg" base_Comment="_MRYA0ne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_MRW xmi:id="_MRoe6He7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYA03e7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRoe6Xe7EeC4X4M9XQqfgg" base_Property="_MRYA03e7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRoe6ne7EeC4X4M9XQqfgg" base_Comment="_MRYA1He7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_MRoe63e7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYA1Xe7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRoe7He7EeC4X4M9XQqfgg" base_Property="_MRYA1Xe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRpF8He7EeC4X4M9XQqfgg" base_Comment="_MRYA1ne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_MRptAHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_MRYA5He7EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_MRptAXe7EeC4X4M9XQqfgg" base_Property="_MRYA5He7EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_MRptAne7EeC4X4M9XQqfgg" base_Comment="_MRYA5ne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimContainment xmi:id="_MRptA3e7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Association="_MRYA6Xe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimEnumeration xmi:id="_MRptBHe7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_Enumeration="_MRYA7Xe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_MRptBXe7EeC4X4M9XQqfgg" base_Comment="_MRYA7ne7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimEnumerationLiteral xmi:id="_MRptBne7EeC4X4M9XQqfgg" hideGroupName="" specification="" base_EnumerationLiteral="_MRYA8Xe7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimEnumerationLiteral xmi:id="_MRptB3e7EeC4X4M9XQqfgg" base_EnumerationLiteral="_MRYA83e7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimEnumerationLiteral xmi:id="_MRptCHe7EeC4X4M9XQqfgg" base_EnumerationLiteral="_MRYA9Xe7EeC4X4M9XQqfgg"/>
+  <Default:Documentation xmi:id="_UWGroHe7EeC4X4M9XQqfgg" base_Comment="_UV_98He7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_mrrX8He_EeC4X4M9XQqfgg" hideGroupName="" specification="" unit="" base_Property="_mrqw4He_EeC4X4M9XQqfgg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_mrrX8Xe_EeC4X4M9XQqfgg" base_Property="_mrqw4He_EeC4X4M9XQqfgg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_mrrX8ne_EeC4X4M9XQqfgg" base_Comment="_mrqw4ne_EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimMoClass_RO xmi:id="_mRAIgH0tEeChc7QVgHP1-Q" hideGroupName="" specification="" base_Class="_mQ4zwH0tEeChc7QVgHP1-Q"/>
+  <Default:Documentation xmi:id="_mRFoEH0tEeChc7QVgHP1-Q" base_Comment="_mRAIgX0tEeChc7QVgHP1-Q"/>
+  <ECIMBaseProfile:EcimKeyAttribute xmi:id="_mSTJAH0tEeChc7QVgHP1-Q" hideGroupName="" specification="" unit="" base_Property="_mSNpcH0tEeChc7QVgHP1-Q"/>
+  <Default:Documentation xmi:id="_mSYokH0tEeChc7QVgHP1-Q" base_Comment="_mSTJAX0tEeChc7QVgHP1-Q"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_3D4P0H0tEeChc7QVgHP1-Q" base_Property="_3D0lcH0tEeChc7QVgHP1-Q"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_3D4P0X0tEeChc7QVgHP1-Q" hideGroupName="" specification="" unit="" base_Property="_3D0lcH0tEeChc7QVgHP1-Q"/>
+  <Default:Documentation xmi:id="_3D8hQH0tEeChc7QVgHP1-Q" base_Comment="_3D424n0tEeChc7QVgHP1-Q"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_Il1qsH0uEeChc7QVgHP1-Q" base_Property="_IlwLIH0uEeChc7QVgHP1-Q"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_Il1qsX0uEeChc7QVgHP1-Q" hideGroupName="" specification="" unit="" base_Property="_IlwLIH0uEeChc7QVgHP1-Q"/>
+  <Default:Documentation xmi:id="_Il7xUH0uEeChc7QVgHP1-Q" base_Comment="_Il240H0uEeChc7QVgHP1-Q"/>
+  <ECIMBaseProfile:EcimContainment xmi:id="_-pSFgH0uEeChc7QVgHP1-Q" hideGroupName="" specification="" base_Association="_-n4-YH0uEeChc7QVgHP1-Q"/>
+  <ECIMBaseProfile:EcimAttribute_MRW xmi:id="_NNgfoIEvEeC7Cdpr7mDcCg" hideGroupName="" specification="" unit="" base_Property="_NNfRgIEvEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_NNgfoYEvEeC7Cdpr7mDcCg" base_Property="_NNfRgIEvEeC7Cdpr7mDcCg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_NNhGsIEvEeC7Cdpr7mDcCg" base_Comment="_NNfRgYEvEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAttribute_MRW xmi:id="_PzecUIEvEeC7Cdpr7mDcCg" hideGroupName="" specification="" unit="" base_Property="_Pzd1QIEvEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_PzecUYEvEeC7Cdpr7mDcCg" base_Property="_Pzd1QIEvEeC7Cdpr7mDcCg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_PzfDYIEvEeC7Cdpr7mDcCg" base_Comment="_Pzd1QYEvEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_ZZSgAIEvEeC7Cdpr7mDcCg" hideGroupName="" specification="" unit="" base_Property="_ZZRR4IEvEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_ZZSgAYEvEeC7Cdpr7mDcCg" base_Property="_ZZRR4IEvEeC7Cdpr7mDcCg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_ZZSgAoEvEeC7Cdpr7mDcCg" base_Comment="_ZZRR4YEvEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_ZZSgA4EvEeC7Cdpr7mDcCg" hideGroupName="" specification="" unit="" base_Property="_ZZR48IEvEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_ZZSgBIEvEeC7Cdpr7mDcCg" base_Property="_ZZR48IEvEeC7Cdpr7mDcCg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_ZZTHEIEvEeC7Cdpr7mDcCg" base_Comment="_ZZR48YEvEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_dHZJcIEvEeC7Cdpr7mDcCg" hideGroupName="" specification="" unit="" base_Property="_dHYiYIEvEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_dHZwgIEvEeC7Cdpr7mDcCg" base_Property="_dHYiYIEvEeC7Cdpr7mDcCg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_dHZwgYEvEeC7Cdpr7mDcCg" base_Comment="_dHYiYYEvEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_13VN8IEvEeC7Cdpr7mDcCg" hideGroupName="" specification="" unit="" base_Property="_13Um4IEvEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_13VN8YEvEeC7Cdpr7mDcCg" base_Property="_13Um4IEvEeC7Cdpr7mDcCg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_13V1AIEvEeC7Cdpr7mDcCg" base_Comment="_13Um4oEvEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAction xmi:id="_H_d4AoEwEeC7Cdpr7mDcCg" hideGroupName="" specification="" base_Operation="_H_d4AIEwEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAction xmi:id="_H_efEIEwEeC7Cdpr7mDcCg" base_Operation="_H_d4AIEwEeC7Cdpr7mDcCg" admOpId="1"/>
+  <Default:Documentation xmi:id="_H_efEYEwEeC7Cdpr7mDcCg" base_Comment="_H_d4AYEwEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_tqD1EIEwEeC7Cdpr7mDcCg" hideGroupName="" specification="" unit="" base_Property="_tp9ucIEwEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_tqEcIIEwEeC7Cdpr7mDcCg" base_Property="_tp9ucIEwEeC7Cdpr7mDcCg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_BVFOMIExEeC7Cdpr7mDcCg" base_Comment="_BU_uoIExEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_iGbH4IEyEeC7Cdpr7mDcCg" hideGroupName="" specification="" unit="" base_Property="_iGUaMIEyEeC7Cdpr7mDcCg"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_iGbH4YEyEeC7Cdpr7mDcCg" base_Property="_iGUaMIEyEeC7Cdpr7mDcCg" isConfigurable="true"/>
+  <Default:Documentation xmi:id="_qTDLEIEyEeC7Cdpr7mDcCg" base_Comment="_qS9rgIEyEeC7Cdpr7mDcCg"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_cl504IFOEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_clm58IFOEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_cl504YFOEeCHXpdXyfqLmA" base_Property="_clm58IFOEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_cmKTkIFOEeCHXpdXyfqLmA" base_Comment="_cl7DAIFOEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_lWjLIIFOEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_lWdrkIFOEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_lWjyMIFOEeCHXpdXyfqLmA" base_Property="_lWdrkIFOEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_lWpRwIFOEeCHXpdXyfqLmA" base_Comment="_lWjyMoFOEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_7f4ZwIFOEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_7fy6MIFOEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_7f5A0IFOEeCHXpdXyfqLmA" base_Property="_7fy6MIFOEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_7f_HcIFOEeCHXpdXyfqLmA" base_Comment="_7f5n4IFOEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_AOdBsIFPEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_AOSpoIFPEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_AOdBsYFPEeCHXpdXyfqLmA" base_Property="_AOSpoIFPEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_AOdBsoFPEeCHXpdXyfqLmA" base_Comment="_AOSpoYFPEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_AOdowIFPEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_AOTQsIFPEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_AOdowYFPEeCHXpdXyfqLmA" base_Property="_AOTQsIFPEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_AOdowoFPEeCHXpdXyfqLmA" base_Comment="_AOTQsYFPEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_AOdow4FPEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_AOTQs4FPEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_AOeP0IFPEeCHXpdXyfqLmA" base_Property="_AOTQs4FPEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_AOeP0YFPEeCHXpdXyfqLmA" base_Comment="_AOTQtIFPEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_DvopcIFPEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_Dvm0QIFPEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_DvopcYFPEeCHXpdXyfqLmA" base_Property="_Dvm0QIFPEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_DvpQgIFPEeCHXpdXyfqLmA" base_Comment="_DvnbUIFPEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_DvpQgYFPEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_DvoCYIFPEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_DvpQgoFPEeCHXpdXyfqLmA" base_Property="_DvoCYIFPEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_DvpQg4FPEeCHXpdXyfqLmA" base_Comment="_DvoCYYFPEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_DvpQhIFPEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_DvoCY4FPEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_DvpQhYFPEeCHXpdXyfqLmA" base_Property="_DvoCY4FPEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_DvpQhoFPEeCHXpdXyfqLmA" base_Comment="_DvoCZIFPEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimContribution xmi:id="_HVW2IIFTEeCHXpdXyfqLmA" hideGroupName="" specification="" base_Association="_HT1MIIFTEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="__IZe8IFWEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="__ITYUIFWEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="__IaGAIFWEeCHXpdXyfqLmA" base_Property="__ITYUIFWEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="__IgMoIFWEeCHXpdXyfqLmA" base_Comment="__IaGAoFWEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RO xmi:id="_HD8ZMIFXEeCHXpdXyfqLmA" hideGroupName="" specification="" unit="" base_Property="_HD2SkIFXEeCHXpdXyfqLmA"/>
+  <CoreMWProfile:CoreMwAttribute xmi:id="_HD8ZMYFXEeCHXpdXyfqLmA" base_Property="_HD2SkIFXEeCHXpdXyfqLmA"/>
+  <Default:Documentation xmi:id="_HECf0IFXEeCHXpdXyfqLmA" base_Comment="_HD9AQYFXEeCHXpdXyfqLmA"/>
+  <ECIMBaseProfile:EcimAttribute_RW xmi:id="_fWHnIIwtEeCHGPEHyBmkSA" base_Property="_MRXZK3e7EeC4X4M9XQqfgg"/>
+  <ECIMBaseProfile:EcimInstancePackage xmi:id="_rrAgMIwtEeCHGPEHyBmkSA" base_Package="_rq5ygIwtEeCHGPEHyBmkSA"/>
+  <ECIMBaseProfile:EcimMocInstance xmi:id="_1g5nQIwtEeCHGPEHyBmkSA" base_InstanceSpecification="_1g1V0IwtEeCHGPEHyBmkSA"/>
+</xmi:XMI>

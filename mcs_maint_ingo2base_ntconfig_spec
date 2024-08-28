@@ -1,0 +1,134 @@
+# NT config spec for MCS maintenance based on ANZ21840/2 R1A (Ingo2). ver 01-11-07
+# author: Stefan Ericsson 
+# 020130 STER Changed to use ... correctly.
+# Note that INGO2-based correction is done in branch maint_ingo2.
+#========================================================================
+
+# Correction base
+element * CHECKEDOUT
+element /sio_mcs/... .../maint_ingo2/LATEST
+
+# Spec. for Released corrections
+#### This section must be updated for each released correction ####
+# Note that "-mkbranch" is removed once the branch has been created!!
+# All correction based on Ingo2 should thus be derived from the maint_ingo2-branch.
+# element /sio_mcs/adh/... MMLAPIBIN_CXC137418_4_R2C
+
+
+# Below follows the design base for MCS ANZ21840/2 R1A
+#======================================================
+
+# ADH base
+element /sio_mcs/adh/... ADHADMBIN_CXC137415_4_R2B -mkbranch maint_ingo2
+# element /sio_mcs/adh/... ADHADM_CXC137415_4_INGO2_R2B_EC1 -mkbranch maint_ingo2
+element /sio_mcs/adh/... ADHADM_CXC137415_4_INGO2_R2B -mkbranch maint_ingo2
+
+element /sio_mcs/adh/... MMLAPIBIN_CXC137418_4_R2B -mkbranch maint_ingo2
+element /sio_mcs/adh/... MMLAPI_CXC137418_INGO2_R2B -mkbranch maint_ingo2
+element /sio_mcs/adh/... MMLAPIBIN_CXC137418_4_INGO2_R2A -mkbranch maint_ingo2
+
+element /sio_mcs/adh/... MMLAPILIB_CXA1100119_R2A -mkbranch maint_ingo2
+
+element /sio_mcs/adh/... CPDCMDBIN_CXC137465_4_R1A -mkbranch maint_ingo2
+element /sio_mcs/adh/... CPDCMDBIN_CXC137465_4_INGO2_R1A -mkbranch maint_ingo2
+element /sio_mcs/adh/... CPDCMD_CXC137465_4_INGO2_R1A -mkbranch maint_ingo2
+
+element /sio_mcs/adh/... CNZ2181084_R2 -mkbranch maint_ingo2
+element /sio_mcs/adh/... CNZ2181084_R1 -mkbranch maint_ingo2
+
+# AIAP base
+element /sio_mcs/aiap/... AIAPBIN_CXC137445_4_R2A -mkbranch maint_ingo2
+element /sio_mcs/aiap/... AIAP_CXC137445_4_INGO2_R2A -mkbranch maint_ingo2
+element /sio_mcs/aiap/... CNZ2181085_R2 -mkbranch maint_ingo2
+element /sio_mcs/aiap/... CNZ2181085_R1 -mkbranch maint_ingo2
+
+# ALDA base
+element /sio_mcs/alda/... ALDABIN_CXC137463_4_R1A -mkbranch maint_ingo2
+element /sio_mcs/alda/... CXC137463_4_INGO2_R1A -mkbranch maint_ingo2
+element /sio_mcs/alda/... CNZ2181086_R2 -mkbranch maint_ingo2
+element /sio_mcs/alda/... CNZ2181086_R1 -mkbranch maint_ingo2
+
+# ALEC base
+element /sio_mcs/alec/... ALECBIN_CXC137464_4_R1A -mkbranch maint_ingo2
+element /sio_mcs/alec/... CXC137464_4_INGO2_R1A -mkbranch maint_ingo2
+element /sio_mcs/alec/... CNZ2181087_R2 -mkbranch maint_ingo2
+# element /sio_mcs/alec/... CNZ2181087_R1 -mkbranch maint_ingo2
+
+# ALIS base
+element /sio_mcs/alis/... ALISADMBIN_CXC137428_4_R2A -mkbranch maint_ingo2
+element /sio_mcs/alis/... AISAPIBIN_CXC137425_4_R2A -mkbranch maint_ingo2
+
+element /sio_mcs/alis/... CXC137428_4_INGO2_R1A -mkbranch maint_ingo2
+element /sio_mcs/alis/... CXC137425_4_INGO2_R2A -mkbranch maint_ingo2
+
+element /sio_mcs/alis/... CNZ2181092_R2 -mkbranch maint_ingo2
+element /sio_mcs/alis/... CNZ2181092_R1 -mkbranch maint_ingo2
+
+# MCC base
+element /sio_mcs/mcc/... MCCBIN_CXC137429_4_R2B -mkbranch maint_ingo2
+element /sio_mcs/mcc/... MCC_CXC137429_4_INGO2_R2B -mkbranch maint_ingo2
+element /sio_mcs/mcc/... CNZ2181088_R2 -mkbranch maint_ingo2
+element /sio_mcs/mcc/... CNZ2181088_R1 -mkbranch maint_ingo2
+
+# MLS base
+element /sio_mcs/mls/... MLSMMLBIN_CXC137430_4_R2B -mkbranch maint_ingo2
+element /sio_mcs/mls/... MLSMML_CXC137430_4_INGO2_R2B -mkbranch maint_ingo2
+element /sio_mcs/mls/... CNZ2181089_R2 -mkbranch maint_ingo2
+element /sio_mcs/mls/... CNZ2181089_R1 -mkbranch maint_ingo2
+
+# PDS base
+element /sio_mcs/pds/... PDSPGMBIN_CXC137431_4_R2A -mkbranch maint_ingo2
+element /sio_mcs/pds/... PDSPGM_CXC137431_4_INGO2_R2A -mkbranch maint_ingo2
+element /sio_mcs/pds/... CNZ2181090_R2 -mkbranch maint_ingo2
+element /sio_mcs/pds/... CNZ2181090_R1 -mkbranch maint_ingo2
+
+# OSF base
+element /sio_mcs/osf/... OSFAPIBIN_CXC137452_4_R1C -mkbranch maint_ingo2
+element /sio_mcs/osf/... CXC137452_R1C -mkbranch maint_ingo2
+element /sio_mcs/osf/... CXC137452_R1B -mkbranch maint_ingo2
+element /sio_mcs/osf/... CNZ2181094_R1 -mkbranch maint_ingo2
+# element /sio_mcs/osf/... CNZ2181094_R1_I19 -mkbranch maint_ingo2
+
+# MCS Subsystem base ANZ 21840/2 R1A  INGO2 Release
+element /sio_mcs/... ANZ21840_2_R1A -nocheckout
+
+
+#############################################
+# Define the access to other VOBs (View-only)
+#############################################
+
+# VOB Interfaces
+# element /Interfaces/... .../aln_ingo3/LATEST -nocheckout
+# element /Interfaces/... .../Ingo3/LATEST -nocheckout
+element /Interfaces/... .../aln_ingo2/LATEST -nocheckout
+element /Interfaces/... .../Ingo/LATEST -nocheckout
+element /Interfaces/... .../sio_NT/LATEST -nocheckout
+element /Interfaces/... .../sio/LATEST -nocheckout
+
+# VOB ACS
+# element /ntacs/... .../aln_ingo3/LATEST -nocheckout
+# element /ntacs/... .../Ingo3/LATEST -nocheckout
+element /ntacs/... .../aln_ingo2/LATEST -nocheckout
+element /ntacs/... .../Ingo/LATEST -nocheckout
+element /ntacs/... .../sio_NT/LATEST -nocheckout
+element /ntacs/... .../sio/LATEST -nocheckout
+
+# VOB AES Not valid in INGO2
+# element /ntaes/... .../aln_ingo3/LATEST -nocheckout
+# element /ntaes/... .../Ingo3/LATEST -nocheckout
+# element /ntaes/... .../Ingo/LATEST -nocheckout
+# element /ntaes/... .../sio_NT/LATEST -nocheckout
+# element /ntaes/... .../sio/LATEST -nocheckout
+
+# VOB FMS
+# element /sio_fms/... .../aln_ingo3/LATEST -nocheckout
+# element /sio_fms/... .../Ingo3/LATEST -nocheckout
+element /sio_fms/... .../Ingo/LATEST -nocheckout
+element /sio_fms/... .../sio_NT/LATEST -nocheckout
+element /sio_fms/... .../sio/LATEST -nocheckout
+
+
+# Other files and directories for viewing only:
+element * /main/LATEST -nocheckout
+
+

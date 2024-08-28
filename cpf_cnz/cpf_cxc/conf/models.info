@@ -1,0 +1,151 @@
+##
+# ------------------------------------------------------------------------
+#     Copyright (C) 2013 Ericsson AB. All rights reserved.
+# ------------------------------------------------------------------------
+##
+# models.info TEMPLATE
+##
+# Description:
+#       Configuration file used to perform IMM model changes during software upgrade for CPF block.
+##
+##
+# Changelog:
+# - nov 25-27 2013 - Fabrizio Paglia (XFABPAG)      First version
+# - dec 21-01 2014 - Andrea Formica  (EANFORM)      From APG43L1.12 to LSV24 
+##
+# Report here FOR EACH package version, all introduced model changes, in the following format,
+# starting from the first version from which you want to support upgrade, with the most recent on top
+#APG43L-5.3 LSV2407
+VERSION: CXC1371438_9-R1U
+
+#APG43L-5.1 LSV2308
+VERSION: CXC1371438_9-R1T
+
+#APG43L-4.2 LSV06
+VERSION: CXC1371438_9-R1S
+
+#APG43L-4.2 LSV05
+VERSION: CXC1371438_9-R1N
+
+#APG43L-4.1 CM02
+VERSION: CXC1371438_9-R1M
+
+#APG43L-4.1 CM01
+VERSION: CXC1371438_9-R1L
+
+#APG43L-4.1 LSV04
+VERSION: CXC1371438_9-R1K
+log "Performing model changes introduced in version CXC1371438_9-R1K"
+cmw-immclass-modify $BUNDLE_NAME AxeCpFileSystemCompositeFile
+
+#APG43L-4.1 LSV03
+VERSION: CXC1371438_9-R1J
+log "Model files updated by generating with new version of modelling tool"
+
+#APG43L-4.0 LSV08
+VERSION: CXC1371438_9-R1H
+
+#APG43L-4.0 LSV07
+VERSION: CXC1371438_9-R1G
+
+#APG43L-4.0 LSV07
+VERSION: CXC1371438_9-R1F
+
+#APG 3.8 LSV03
+VERSION: CXC1371438_9-R1E
+log "Model files updated by generating with new version of modelling tool"
+
+#APG43L-3.8 LSV02
+VERSION: CXC1371438_9-R1D
+
+#APG43L-3.7 LSV07
+VERSION: CXC1371438_9-R1C
+
+#APG43L-3.6.2
+VERSION: CXC1371438_9-R1B
+
+VERSION: CXC1371438_9-R1A05
+# Adaptations to SwM2.0
+VERSION: CXC1371438_9-R1A04
+VERSION: CXC1371438_9-R1A03
+VERSION: CXC1371438_9-R1A02
+VERSION: CXC1371438_9-R1A01
+
+#APG43L-3.5.3
+VERSION: CXC1371438_5-R1J
+
+#AXE18A LSV12
+VERSION: CXC1371438_5-R1H
+
+#AXE18A 3.4.5
+VERSION: CXC1371438_5-R1G
+
+#AXE18A SLES12 - no changes
+VERSION: CXC1371438_5-R1F
+
+#AXE18A CM003 - no changes
+VERSION: CXC1371438_5-R1E
+
+#AXE17A SLES12 - no changes
+VERSION: CXC1371438_5-R1D
+
+#AXE17A SLES12 - no changes
+VERSION: CXC1371438_5-R1C
+
+#AXE17A SLES12 - no changes
+VERSION: CXC1371438_5-R1B
+
+#AXE17A SLES12 - no changes
+VERSION: CXC1371438_5-R1A04
+
+#AXE17A SLES12 - no changes
+VERSION: CXC1371438_5-R1A03
+
+#AXE17A SLES12 - NBI folder permission fix
+VERSION: CXC1371438_5-R1A02
+
+#AXE17A SLES12 - no changes
+VERSION: CXC1371438_5-R1A01
+
+#Rel3.1.0 - no changes
+VERSION: CXC1371438-R1E
+
+#Rel3.0.0 - no changes
+VERSION: CXC1371438-R1D
+
+#Rel2.2.1 - no changes
+VERSION: CXC1371438-R1C
+
+#CM003 - no changes
+VERSION: CXC1371438-R1B
+
+#LSV32 - no changes
+VERSION: CXC1371438-R1A24
+
+#LSV32_ID - no changes
+VERSION: CXC1371438-R1A23
+
+#LSV31 - model change
+VERSION: CXC1371438-R1A22
+log "Performing model changes introduced in version CXC1371438-R1A22"
+cmw-immclass-modify $BUNDLE_NAME AxeCpFileSystemInfiniteFile
+
+#LSV29 - no changes
+VERSION: CXC1371438-R1A21
+
+#LSV26 - no changes
+VERSION: CXC1371438-R1A20
+
+#LSV26ID - no changes
+VERSION: CXC1371438-R1A19
+
+#LSV24 - no changes
+VERSION: CXC1371438-R1A18
+log "Performing model changes introduced in version CXC1371438-R1A18"
+cmw-immclass-modify $BUNDLE_NAME AxeCpFileSystemCpFileSystemM
+
+#LSV23
+VERSION: CXC1371438-R1A17
+
+#1.1.12 - no changes
+VERSION: CXC1371368-R1K

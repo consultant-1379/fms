@@ -1,0 +1,28 @@
+# NT config spec for the Ingo4 drop2 (GOH2.1 & CPFCOMP) project at Teleca Networks ver 04-12-14
+# author: Gunnar Andersson (Johan Stigenius)
+
+# CNZ label used when labling CAA och CXC (fill in CNZ label)
+# element * CNZ220xxxx_Rx_CNIxxx
+
+element * CHECKEDOUT
+
+# Bug branch for specific problem (fill in TR number)
+# element * .../osd_hexxxxx/LATEST
+# mkbranch osd_hexxxxx -override
+
+# Fill in date if someone is still working on previous version
+# time 10-Jul.19:00
+
+# The CPFCOMP directories / files
+element /sio_fms/... .../osd_bugfix_ingo4_drop2/LATEST
+element /sio_fms/... BUGFIX_INGO4_DROP2_P1A -mkbranch osd_bugfix_ingo4_drop2
+element /sio_fms/... /main/LATEST -mkbranch osd_bugfix_ingo4_drop2
+
+# The GOH2.1 directories / files
+element /ntaes/... .../osd_bugfix_ingo4_drop2/LATEST
+element /ntaes/... BUGFIX_INGO4_DROP2_P1A -mkbranch osd_bugfix_ingo4_drop2
+element /ntaes/... /main/LATEST -mkbranch osd_bugfix_ingo4_drop2
+
+# other files / directories for viewing only:
+element * /main/LATEST -nocheckout
+

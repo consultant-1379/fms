@@ -1,0 +1,41 @@
+# NT config spec for the P12 project (APZ 12.0) at Teleca Networks ver 05-07-14
+# author: Gunnar Andersson
+
+# CNZ label used when labling CAA och CXC (fill in CNZ label)
+# element * CNZ220xxxx_Rx_CNIxxx
+
+element * CHECKEDOUT
+
+# Bug branch for specific problem (fill in TR number)
+# element * .../osd_hfxxxxx/LATEST
+# mkbranch osd_hfxxxxx -override
+
+# Fill in date if someone is still working on previous version
+# time 10-Jul.19:00
+
+# The CPF directories / files
+element /sio_fms/... .../osd_p12/LATEST
+element /sio_fms/... P12_I5 -mkbranch osd_p12
+element /sio_fms/... /main/LATEST -mkbranch osd_p12
+
+# The MCS directories / files
+element /sio_mcs/... .../al_p12/LATEST
+element /sio_mcs/... P12_P1A
+element /sio_mcs/... /main/LATEST
+
+# The GOH directories / files
+element /ntaes/... .../osd_bugfix_p12/LATEST
+element /ntaes/... BUGFIX_P12_P1A -mkbranch osd_bugfix_p12
+element /ntaes/... .../al_p12/LATEST -mkbranch osd_bugfix_p12
+element /ntaes/... P12_P1A -mkbranch osd_bugfix_p12
+element /ntaes/... /main/LATEST -mkbranch osd_bugfix_p12
+
+# The ACS directories / files
+element /ntacs/... .../osd_p12/LATEST
+element /ntacs/... .../al_p12/LATEST -mkbranch osd_p12
+element /ntacs/... P12_P1A -mkbranch osd_p12
+element /ntacs/... /main/LATEST -mkbranch osd_p12
+
+# other files / directories for viewing only:
+element * /main/LATEST -nocheckout
+

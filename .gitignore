@@ -1,0 +1,58 @@
+# Compiled source #
+###################
+*.obj
+*.d
+*.gcno
+*.o
+
+# Packages #
+############
+*.rpm
+*.sdp
+*.tar.gz
+*.tgz
+*.bin
+*.exe
+*.tar
+*.zip
+*.jar
+
+# Windows Specific #
+####################
+*.ccscc
+*.dsp
+*.dsw
+*.vcproj
+*.sln
+*.pdb
+*.vspscc
+*.suo
+*.vsscc
+*.vssscc
+
+#list speicific application binaries
+#/cpf_cnz/
+cpf_cnz/cpf_cxc/doc/
+cpf_cnz/cpf_cxc/bin/cpfcp
+cpf_cnz/cpf_cxc/bin/cpfls
+cpf_cnz/cpf_cxc/bin/cpfmkfile
+cpf_cnz/cpf_cxc/bin/cpfmkvol
+cpf_cnz/cpf_cxc/bin/cpfport
+cpf_cnz/cpf_cxc/bin/cpfrename
+cpf_cnz/cpf_cxc/bin/cpfrm
+cpf_cnz/cpf_cxc/bin/fms_cpfd
+cpf_cnz/cpf_cxc/bin/.debug/cpfcp_dbg
+cpf_cnz/cpf_cxc/bin/.debug/cpfls_dbg
+cpf_cnz/cpf_cxc/bin/.debug/cpfmkfile_dbg
+cpf_cnz/cpf_cxc/bin/.debug/cpfmkvol_dbg
+cpf_cnz/cpf_cxc/bin/.debug/cpfport_dbg
+cpf_cnz/cpf_cxc/bin/.debug/cpfrename_dbg
+cpf_cnz/cpf_cxc/bin/.debug/cpfrm_dbg
+cpf_cnz/cpf_cxc/bin/.debug/fms_cpfd_dbg
+cpf_cnz/cpfcmd_caa/test/cpftest
+cpf_cnz/cpf_cxc/bin/lib_ext/libfms_cpf.so.10.*
+cpf_cnz/cpf_cxc/bin/lib_ext/.debug/libfms_cpf.so.10.*
+cpf_cnz/cpf_cxc/bin/lib_ext/libfms_cpf.so
+cpf_cnz/cpf_cxc/bin/lib_ext/libfms_cpf.so.10
+
+######### END ##########
